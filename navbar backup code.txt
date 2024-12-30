@@ -1,0 +1,372 @@
+
+    <!-- Navbar top starts -->
+
+    <style>
+          .social-icons {
+        display: flex;
+        gap: 20px;
+    }
+    .social-icons {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+    .social-icon {
+        text-decoration: none;
+        font-size: 22px;
+        color: #fff;
+        /* background-color: #15571c;  */
+        padding: 8px;
+        transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        display: flex;
+        float: right;
+        justify-content: center;
+    }
+    @font-face {
+        font-family: 'Alex Brush';
+        src: url('assets/font-family/Alex_Brush/AlexBrush-Regular.ttf');
+    }
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('assets/font-family/Montserrat/static/Montserrat-Black.ttf');
+    }
+    .social-icon:hover {
+        color: #fff;
+        background-color: #f39c12;
+        transform: scale(0.7);
+    }
+    .logo-cont {
+        padding-top: 10px;
+    }
+    .logo-cont img {
+        width: 200px;
+        ;
+    }
+    .logo-cont span {
+        font-size: 25px;
+        font-weight: 500;
+        
+        font-family: 'Alex Brush';
+        text-transform: capitalize;
+        margin: 15px 0 0 120px;
+    }
+    .logo-cont h3 {
+        font-size: 30px;
+        font-weight: 900;
+        
+        font-family: 'Montserrat' !important;
+        margin: 0;
+        margin-top: -5px;
+    }
+    .logo-cont p {
+        font-size: 18px;
+        font-weight: 500;
+        color: #000;
+        text-transform: capitalize !important;
+        margin: 0 0 0 55px;
+    }
+    .announcement-container {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            overflow: hidden;
+            position: relative;
+        }
+ 
+        .announcement {
+            white-space: nowrap;
+            color: #fffb;
+            font-size: 16px;
+            font-weight: bold;
+            animation: scroll-left 10s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    @media (max-width: 768px) {
+        .mobile-nav-toggle {
+            margin-top: 30px;
+        }
+        .social-icons {
+            align-items: center;
+        }
+        .social-icon {
+            margin-bottom: 10px;
+            display: none;
+        }
+        #header .logo img {
+            max-height: 80px;
+        }
+        .logo-cont h3 {
+            font-size: 18px;
+        }
+        .logo-cont span {
+            font-size: 22px;
+            margin: 15px 0 0 55px;
+        }
+        .logo-cont p {
+            font-size: 14px;
+            margin: 0 0 0 10px;
+        }
+        .mobile-nav-active .mobile-nav-toggle i {
+            color: #076532;
+            font-size: 30px;
+        }
+        .features {
+            height: 100% !important;
+        }
+    }
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        margin-right: 10px;         background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        right: 0;
+    }
+    .my-float {
+        margin-top: 16px;
+    }
+   
+    #datetime {
+        font-size: 20px;
+        color: #204932;
+      }
+    </style>
+    <script>
+ 
+
+ // Function to update the date and time
+function updateDateTime() {
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const now = new Date();
+    const day = days[now.getDay()];
+    const time = now.toLocaleTimeString(); // e.g., 12:34:56 PM
+    const date = now.toLocaleDateString(); // e.g., 12/13/2024
+
+    // Combine day, time, and date
+    const dateTime = `${day}, ${time}, ${date}`;
+
+    // Display the dateTime in an element with id="dateTime"
+    document.getElementById('dateTime').innerText = dateTime;
+}
+
+// Update the date and time every second
+setInterval(updateDateTime, 1000);
+
+// Call updateDateTime immediately to set the initial value
+updateDateTime();
+
+     
+    </script>
+
+  <header id="header">
+      <div style="width:100%; height: 32px;background-color:#204932;">
+          <div class="container-fluid">
+              <div class="row">
+                <div  class="col-sm-12 col-xs-12 col-md-6 col-lg-6" style="text-align: center;font-size:small; color: #FFF;padding-top: 5px; "> Admissions Helpline :   <i class="bi bi-telephone-fill"></i>  +91 7075164143 &nbsp; | &nbsp; <i class="bi bi-envelope-fill"></i> &nbsp;admissions@idpscherukupalli.com </div>
+                  <!-- <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6" style="text-align: center;">
+                      <div style="color:rgb(246, 243, 243);margin-top: 5px;" id="dateTime"></div>
+                  </div> -->
+                  <div class="col-lg-2"></div>
+
+                  <div class="col-sm-12 col-xs-12 col-md-6 col-lg-4" style="text-align: center !important; ">
+                      <div class="social-icons" >
+                          <a href="https://www.facebook.com/people/Idps-Cherukupalli/61554664603652/" target="_blank"
+                              class="social-icon" aria-label="Facebook">
+                              <i style="font-size: smaller; color: #FFF;"class="fab fa-facebook-f"></i>
+                          </a>
+                          <a href="https://www.instagram.com/cherukupalliidps/" target="_blank" class="social-icon"
+                          aria-label="Instagram">
+                          <i style="font-size: smaller;color: #FFF;" class="fab fa-instagram"></i>
+                      </a>
+                      <a href="https://www.linkedin.com" target="_blank" class="social-icon"
+                              aria-label="LinkedIn">
+                              <i style="font-size: smaller;color: #FFF;" class="fab fa-linkedin"></i>
+                          </a>
+                          <a href="https://twitter.com/CherukupalliDps/" target="_blank" class="social-icon"
+                              aria-label="Twitter">
+                              <i style="font-size: smaller;color: #FFF;" class="fab fa-twitter"></i>
+                          </a>
+                        
+                          <a href="https://linktr.ee/idpscherukupalli?utm_source=linktree_profile_share&ltsid=51967bf3-7b11-4b5b-8205-dd009f4ff445"
+                              target="_blank" class="social-icon" aria-label="LinkedIn">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" height="20px"
+                                  style="display: block; width: auto;">
+                                  <path
+                                      d="M13.5108 5.85343L17.5158 1.73642L19.8404 4.11701L15.6393 8.12199H21.5488V11.4268H15.6113L19.8404 15.5345L17.5158 17.8684L11.7744 12.099L6.03299 17.8684L3.70842 15.5438L7.93745 11.4361H2V8.12199H7.90944L3.70842 4.11701L6.03299 1.73642L10.038 5.85343V0H13.5108V5.85343ZM10.038 16.16H13.5108V24.0019H10.038V16.16Z"
+                                      fill="#ffff"></path>
+                              </svg>
+                          </a>
+                          
+                          <a href="https://www.youtube.com/@idpscherukupalli" target="_blank" class="social-icon"
+                          aria-label="youtube">
+                          <i style="font-size: smaller;color: #FFF;" class="fab fa-youtube"></i>
+                      </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+<!-- Scroll Bar starts  -->
+
+  <div class="announcement-container">
+    <div class="announcement">
+        <a href="" target="_blank" rel="noopener noreferrer" style="text-decoration: none;color: #FFF;">ADMISSION OPEN FOR SESSION 2025 - 2026 </a>
+    </div>
+</div>
+<style>
+    .announcement-container {
+            background-color: #0E753B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .announcement {
+            white-space: nowrap;
+            color:#FFF;
+            font-size: 16px;
+            font-weight: bold;
+            animation: scroll-left 10s linear infinite;
+        }
+</style>
+
+    <!-- Nav bar with nav items and lins with styles -->
+    <style>
+        
+ /* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; 
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Adjust alignment to your preference */
+}
+
+/* "International" Styling */
+.text-container .sub-text {
+    font-family: 'Alex Brush', cursive;
+    font-size: 20px; 
+    color: #1E7E34; 
+    margin: 0;
+    padding-left: 60px;
+    
+}
+
+/* "Delhi Public School" Styling */
+.text-container .main-text {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: bolder;
+    color: #1E7E34; 
+    margin: 0;
+    margin-top: -8px; /* Moves "Delhi Public School" up */
+}
+
+.text-container .place-text {
+    font-size: 12px;
+    color: #1E7E34; 
+    margin: 0;
+    margin-top: -5px; 
+    font-family:'Montserrat';
+    font-weight: bolder;
+    letter-spacing: 5px;
+    padding-left: 30px;
+
+
+}
+
+/* "CBSE Affiliation No" Styling */
+.text-container .affiliation {
+    font-size: 16px;
+    color: #000; 
+    margin: 0;
+    margin-top: -5px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+        
+    </style>
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="height: 100px;">
+      <div class="container">
+         
+          <div class="logo-container">
+            <img src="img\logo.jpg" style="width: 60px; height: 60px;" alt="School Logo"> 
+            <div class="text-container">
+                <p class="sub-text"  >International</p>
+                <p class="main-text" >DELHI PUBLIC SCHOOL</p>
+                <p class="place-text">CHERUKUPALLI</p>
+                
+                <!-- <p class="affiliation" >CBSE Affiliation No - 130739</p> -->
+            </div>
+        </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="about.html">About School</a></li>
+                          <li><a class="dropdown-item" href="/aboutfounder">Message from Founder</a></li>
+                          <li><a class="dropdown-item" href="/academic">Message from Academic Director</a></li>
+                          <li><a class="dropdown-item" href="/principal">Message from Principal</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Academics
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/preprimary">Pre Primary</a></li>
+                          <li><a class="dropdown-item" href="/primary">Primary School</a></li>
+                          <li><a class="dropdown-item" href="/middileschool">Middle School</a></li>
+                          <li><a class="dropdown-item" href="/beyondacademics">Beyond Academics</a></li>
+                          <li><a class="dropdown-item" href="/assesmentpolicy">Assessment & Promotion Rules</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="/transport">Transport</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/careers">Careers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/contactus">Contact Us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/mandatorydisclosure">Mandatory Disclosure</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>

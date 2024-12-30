@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add this line -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img\logo.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+ <!-- Back to Top -->
+ <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+ <!-- JavaScript Libraries -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="lib/wow/wow.min.js"></script>
+ <script src="lib/easing/easing.min.js"></script>
+ <script src="lib/waypoints/waypoints.min.js"></script>
+ <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+ <!-- Template Javascript -->
+ <script src="js/main.js"></script>
+    
+</head>
+
+<body>
+
+ 
+
+<!-- Navbar top starts from here -->
+<style>
+    /* Social Icons */
+    .social-icons {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .social-icon {
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        padding: 8px;
+        transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-icon:hover {
+        color: #fff;
+        background-color: #f39c12;
+        transform: scale(1.1);
+    }
+
+    /* Top Bar */
+    #header-top {
+        background-color: #204932;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    #header-top .helpline {
+        display: flex;
+        align-items: center;
+    }
+
+    #header-top .helpline i {
+        margin-right: 5px;
+    }
+
+    /* Logo and Text Alignment */
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo-container img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .text-container {
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .sub-text {
+        font-family: 'Alex Brush', cursive;
+        font-size: 12px;
+        color: #1E7E34;
+        margin: 0;
+    }
+
+    .main-text {
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight:bolder;
+        color: #1E7E34;
+        margin: 0;
+        display: block;
+        unicode-bidi: isolate;
+        
+    }
+
+    .place-text {
+        font-family: 'Montserrat';
+        font-size: 7px;
+        font-weight: bold;
+        color: #1E7E34;
+        margin: 0;
+        letter-spacing: 5px;
+    }
+
+    /* Announcement */
+    .announcement-container {
+        background-color: #0E753B;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .announcement-container::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    /* .announcement-container::-webkit-scrollbar-thumb {
+        background-color: #0E753B;
+        border-radius: 3px; 
+    } */
+
+    .announcement-container::-webkit-scrollbar-track {
+        background: #204932;
+    }
+
+    .announcement {
+        display: inline-block;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 20px;
+        animation: scroll-left 10s linear infinite;
+    }
+   
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    /* Navbar */
+    .navbar {
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+
+    .navbar .dropdown-menu {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Mobile Adjustments */
+    @media (max-width: 768px) {
+        #header-top {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .social-icons {
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .logo-container {
+            flex-direction: column;
+        }
+
+        .navbar {
+            flex-direction: column;
+        }
+
+        .navbar .navbar-nav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .navbar .dropdown-menu {
+            position: static;
+            width: 100%;
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+        }
+
+        .navbar .dropdown-menu .dropdown-item {
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .text-container {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .main-text {
+            font-size: 18px;
+        }
+
+        .sub-text {
+            font-size: 16px;
+        }
+
+        .place-text {
+            font-size: 12px;
+        }
+
+        .announcement-container {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<header id="header">
+    <!-- Top Bar -->
+    <div id="header-top">
+        <div class="helpline">
+            <span>Admissions Helpline: <i class="bi bi-telephone-fill"></i> +91 7075164143 |
+                <i class="bi bi-envelope-fill"></i> admissions@idpscherukupalli.com</span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/people/Idps-Cherukupalli/61554664603652/" target="_blank"
+                class="social-icon" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/cherukupalliidps/" target="_blank" class="social-icon"
+                aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/CherukupalliDps/" target="_blank" class="social-icon" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linktr.ee/idpscherukupalli" target="_blank" class="social-icon" aria-label="Linktree">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20px">
+                    <path
+                        d="M13.5108 5.85343L17.5158 1.73642L19.8404 4.11701L15.6393 8.12199H21.5488V11.4268H15.6113L19.8404 15.5345L17.5158 17.8684L11.7744 12.099L6.03299 17.8684L3.70842 15.5438L7.93745 11.4361H2V8.12199H7.90944L3.70842 4.11701L6.03299 1.73642L10.038 5.85343V0H13.5108V5.85343ZM10.038 16.16H13.5108V24.0019H10.038V16.16Z"
+                        fill="#fff"></path>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/@idpscherukupalli" target="_blank" class="social-icon"
+                aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-container">
+        <div class="announcement">
+           <a style="text-decoration: none; color: white;" href=""> Welcome to IDPS Cherukupalli! Admissions Open for the 2025 Academic Year! Contact Us Today!</a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <div class="logo-container">
+               <a href="index.html"> <img src="img/logo.jpg" alt="School Logo"></a>
+               <a href="index.html"> <div class="text-container">
+                    <p class="sub-text">International</p>
+                    <h3 class="main-text">DELHI PUBLIC SCHOOL</h3>
+                    <p class="place-text">CHERUKUPALLI</p>
+                </div></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item "><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="about.html">About School</a></li>
+                            <li><a class="dropdown-item" href="founder.html">Message from Founder</a></li>
+                            <li><a class="dropdown-item" href="director.html">Message from Academic Director</a></li>
+                            <li><a class="dropdown-item" href="principal.html">Message from Principal</a></li>
+                            <li><a class="dropdown-item" href="mandatorydisclosure.html">Mandatory Disclosure</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="preprimary.html">Pre Primary</a></li>
+                            <li><a class="dropdown-item" href="primary.html">Primary School</a></li>
+                            <li><a class="dropdown-item" href="middleschool.html">Middle School</a></li>
+                            <li><a class="dropdown-item" href="Beyondacademics.html">Beyond Academics</a></li>
+                            <li><a class="dropdown-item" href="assesmentpolicy.html">Assessment & Promotion Rules</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Student Life </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="Education framework.html">Education Framework</a></li>
+                            <li><a class="dropdown-item " href="extra-curricular activities.html">Extra-Curricular Activities</a></li>
+                            <li><a class="dropdown-item " href="Co-Curricular Activities.html">Co-Curricular Activities</a></li>
+                            <li><a class="dropdown-item" href="facilities.html">Facilities</a></li>
+                            <li><a class="dropdown-item " href="safety and security.html">Safety And Security</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Admissions</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="online registration.html">Online Registration</a></li>
+                            <li><a class="dropdown-item" href="offline registration.html">Offline Registration</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Enrollement</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Enrollement Guide</a></li>
+                            <li><a class="dropdown-item" href="">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="">Age Criteria</a></li>
+                            <li><a class="dropdown-item" href="">Documents Required</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="contactus.html">Contact Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="transport.html">Transport</a></li>
+                            <li><a class="dropdown-item" href="franchise.html">Franchise Enquiry</a></li>
+                           
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<hr style="margin: 0%;">
+<!-- --------------------- Navbar Completed --------------------------------------- -->
+
+<!-- --------------------- Navbar Completed --------------------------------------- -->
+
+<style>
+    .main-container {
+          text-align: center;
+          padding: 20px;
+      }
+
+      .page-header {
+          margin: 20px 0;
+      }
+
+      .page-header h1 {
+          font-size: 20px;
+          color: #0E753B;
+      }
+
+      .promo-banner {
+          background-color: #2c5e2c;
+          color: white;
+          padding: 20px;
+          border-radius: 10px;
+          display: inline-block;
+      }
+
+      .promo-banner h2 {
+          font-size: 36px;
+          font-weight: bold;
+          margin: 0;
+      }
+
+      .promo-banner p {
+          font-size: 14px;
+      }
+
+      .intro-text {
+          margin-top: 20px;
+          color: #555;
+          font-size: 16px;
+         
+         
+      }
+
+      .features-section {
+          margin-top: 40px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+      }
+
+      .feature-card {
+          text-align: center;
+          margin: 10px;
+          padding: 15px;
+          border-radius: 8px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          background-color: #ffffff;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+          width: 200px;
+      }
+
+      .feature-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .feature-card img {
+          width: 150px;
+          height: 150px;
+          margin-bottom: 10px;
+      }
+
+      .feature-card p {
+          font-size: 14px;
+          color: #333;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+          .promo-banner h2 {
+              font-size: 28px;
+          }
+
+          .feature-card {
+              width: 100px;
+          }
+
+          .feature-card img {
+              width: 40px;
+              height: 40px;
+          }
+
+          .feature-card p {
+              font-size: 12px;
+          }
+      }
+</style>
+
+<div class="main-container">
+  <div class="page-header">
+      <h1>Contact US  </h1>
+      <!-- <p>At IDPS, we believe that education extends beyond the academic curriculum. Co-curricular activities play an essential role in developing well-rounded, confident individuals. Our extensive range of activities is designed to nurture diverse talents, promote teamwork, and encourage students to explore their interests and passions.</p> -->
+    </div>
+
+    <!-- <h4 style="color: #0E753B;">A Diverse Range of Activities</h4> -->
+</div>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+   .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .contact-form {
+            flex: 1 1 300px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .contact-form button {
+            background-color: #0E753B;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #0E753B;
+        }
+
+        .info-section {
+            flex: 1 1 300px;
+            background: #0E753B;
+            color: #fff;
+            padding: 20px;
+            margin-left: 10px;
+            border-radius: 8px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .info-section h3 {
+            color: #fff;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .info-section p {
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+
+        .info-section .icon {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .info-section .icon img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            filter: invert(1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 8px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .info-section {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="contact-form">
+            <h2 style="color: #0E753B;">For Enquiry</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter a valid email address" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Enter your message here..." required></textarea>
+
+               
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="info-section">
+            <div class="icon">
+                <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="Location">
+                <div>
+                    <h3>Location:</h3>
+                    <p>CHERUKUPALLI</p>
+                </div>
+            </div>
+            <div class="icon">
+                <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email">
+                <div>
+                    <h3>Email:</h3>
+                    <p>idpscherukupalli@gmail.com</p>
+                </div>
+            </div>
+            <div class="icon">
+                <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Call">
+                <div>
+                    <h3>Call:</h3>
+                    <p>Parents Help line Desk<br>Landline No: 8648293020</p>
+                    <p>Office Contacts<br>Admission helpline no: 7799 7979 31<br>Reception helpline no: 7799 7979 32</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.5776954602045!2d80.6896275!3d16.0501083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a1bffb352ad75%3A0x9f479b0c92562cab!2sINTERNATIONAL%20DELHI%20PUBLIC%20SCHOOL%2C%20CHERUKUPALLI!5e0!3m2!1sen!2sin!4v1694971234567!5m2!1sen!2sin"
+    allowfullscreen=""
+    loading="lazy">
+</iframe>
+
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Your message has been submitted. Thank you!');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

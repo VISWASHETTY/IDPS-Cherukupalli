@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>About Us</title>
+    <meta charset="utf-8">
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add this line -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img\logo.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoIVz39OYwQa8XRtxzG5fW6cHgCacFHsFXBrdaANjFhW80F" crossorigin="anonymous"></script>
+
+ <!-- Back to Top -->
+ <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+ <!-- JavaScript Libraries -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="lib/wow/wow.min.js"></script>
+ <script src="lib/easing/easing.min.js"></script>
+ <script src="lib/waypoints/waypoints.min.js"></script>
+ <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+ <!-- Template Javascript -->
+ <script src="js/main.js"></script>
+ 
+
+</head>
+<body>
+
+<!-- Navbar top starts from here -->
+<style>
+    /* Social Icons */
+    .social-icons {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .social-icon {
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        padding: 8px;
+        transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-icon:hover {
+        color: #fff;
+        background-color: #f39c12;
+        transform: scale(1.1);
+    }
+
+    /* Top Bar */
+    #header-top {
+        background-color: #204932;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    #header-top .helpline {
+        display: flex;
+        align-items: center;
+    }
+
+    #header-top .helpline i {
+        margin-right: 5px;
+    }
+
+    /* Logo and Text Alignment */
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo-container img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .text-container {
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .sub-text {
+        font-family: 'Alex Brush', cursive;
+        font-size: 12px;
+        color: #1E7E34;
+        margin: 0;
+    }
+
+    .main-text {
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight:bolder;
+        color: #1E7E34;
+        margin: 0;
+        display: block;
+        unicode-bidi: isolate;
+        
+    }
+
+    .place-text {
+        font-family: 'Montserrat';
+        font-size: 7px;
+        font-weight: bold;
+        color: #1E7E34;
+        margin: 0;
+        letter-spacing: 5px;
+    }
+
+    /* Announcement */
+    .announcement-container {
+        background-color: #0E753B;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .announcement-container::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    /* .announcement-container::-webkit-scrollbar-thumb {
+        background-color: #0E753B;
+        border-radius: 3px; 
+    } */
+
+    .announcement-container::-webkit-scrollbar-track {
+        background: #204932;
+    }
+
+    .announcement {
+        display: inline-block;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 20px;
+        animation: scroll-left 10s linear infinite;
+    }
+   
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    /* Navbar */
+    .navbar {
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+
+    .navbar .dropdown-menu {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Mobile Adjustments */
+    @media (max-width: 768px) {
+        #header-top {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .social-icons {
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .logo-container {
+            flex-direction: column;
+        }
+
+        .navbar {
+            flex-direction: column;
+        }
+
+        .navbar .navbar-nav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .navbar .dropdown-menu {
+            position: static;
+            width: 100%;
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+        }
+
+        .navbar .dropdown-menu .dropdown-item {
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .text-container {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .main-text {
+            font-size: 18px;
+        }
+
+        .sub-text {
+            font-size: 16px;
+        }
+
+        .place-text {
+            font-size: 12px;
+        }
+
+        .announcement-container {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<header id="header">
+    <!-- Top Bar -->
+    <div id="header-top">
+        <div class="helpline">
+            <span>Admissions Helpline: <i class="bi bi-telephone-fill"></i> +91 7075164143 |
+                <i class="bi bi-envelope-fill"></i> admissions@idpscherukupalli.com</span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/people/Idps-Cherukupalli/61554664603652/" target="_blank"
+                class="social-icon" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/cherukupalliidps/" target="_blank" class="social-icon"
+                aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/CherukupalliDps/" target="_blank" class="social-icon" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linktr.ee/idpscherukupalli" target="_blank" class="social-icon" aria-label="Linktree">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20px">
+                    <path
+                        d="M13.5108 5.85343L17.5158 1.73642L19.8404 4.11701L15.6393 8.12199H21.5488V11.4268H15.6113L19.8404 15.5345L17.5158 17.8684L11.7744 12.099L6.03299 17.8684L3.70842 15.5438L7.93745 11.4361H2V8.12199H7.90944L3.70842 4.11701L6.03299 1.73642L10.038 5.85343V0H13.5108V5.85343ZM10.038 16.16H13.5108V24.0019H10.038V16.16Z"
+                        fill="#fff"></path>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/@idpscherukupalli" target="_blank" class="social-icon"
+                aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-container">
+        <div class="announcement">
+           <a style="text-decoration: none; color: white;" href=""> Welcome to IDPS Cherukupalli! Admissions Open for the 2025 Academic Year! Contact Us Today!</a>
+        </div>
+    </div>
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <div class="logo-container">
+               <a href="index.html"> <img src="img/logo.jpg" alt="School Logo"></a>
+               <a href="index.html"> <div class="text-container">
+                    <p class="sub-text">International</p>
+                    <h3 class="main-text">DELHI PUBLIC SCHOOL</h3>
+                    <p class="place-text">CHERUKUPALLI</p>
+                </div></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="about.html">About School</a></li>
+                            <li><a class="dropdown-item" href="founder.html">Message from Founder</a></li>
+                            <li><a class="dropdown-item" href="director.html">Message from Academic Director</a></li>
+                            <li><a class="dropdown-item" href="principal.html">Message from Principal</a></li>
+                            <li><a class="dropdown-item" href="mandatorydisclosure.html">Mandatory Disclosure</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="preprimary.html">Pre Primary</a></li>
+                            <li><a class="dropdown-item" href="primary.html">Primary School</a></li>
+                            <li><a class="dropdown-item" href="middleschool.html">Middle School</a></li>
+                            <li><a class="dropdown-item" href="Beyondacademics.html">Beyond Academics</a></li>
+                            <li><a class="dropdown-item" href="assesmentpolicy.html">Assessment & Promotion Rules</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Student Life </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Education framework.html">Education Framework</a></li>
+                            <li><a class="dropdown-item" href="extra-curricular activities.html">Extra-Curricular Activities</a></li>
+                            <li><a class="dropdown-item" href="Co-Curricular Activities.html">Co-Curricular Activities</a></li>
+                            <li><a class="dropdown-item" href="facilities.html">Facilities</a></li>
+                            <li><a class="dropdown-item" href="safety and security.html">Safety And Security</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Admissions</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="online registration.html">Online Registration</a></li>
+                            <li><a class="dropdown-item" href="offline registration.html">Offline Registration</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Enrollement</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Enrollement Guide</a></li>
+                            <li><a class="dropdown-item" href="">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="">Age Criteria</a></li>
+                            <li><a class="dropdown-item" href="">Documents Required</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="transport.html">Transport</a></li>
+                            <li><a class="dropdown-item" href="franchise.html">Franchise Enquiry</a></li>
+                           
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<hr style="width: 100%; margin: 0%;">
+
+
+  
+
+
+
+
+
+
+
+    <!-- About Section -->
+
+    
+    <style>
+       
+      /* Section Styling */
+      .about-section {
+          display: flex;
+          align-items: stretch; /* Ensures equal height for children */
+          justify-content: center;
+          padding: 50px 10%;
+          gap: 30px;
+          background-color: #ffffff;
+      }
+
+      .about-content {
+          flex: 1;
+      }
+
+      .about-content h3 {
+          color: #0E753B;
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 1.5px;
+          margin-bottom: 10px;
+      }
+
+      .about-content h2 {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 20px;
+          color: #33303e;
+      }
+
+      .about-content p {
+          font-size: 1rem;
+          color: #555555;
+          margin-bottom: 20px;
+          line-height: 1.5;
+      }
+
+      .about-btn {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #0E753B;
+          color: #ffffff;
+          text-decoration: none;
+          font-weight: bold;
+          border-radius: 5px;
+          cursor: pointer;
+          border: none;
+          transition: background-color 0.3s ease;
+      }
+
+      .about-btn:hover {
+          background-color: #0c5f30;
+      }
+
+      /* Image Styling */
+      .about-image {
+          flex: 1;
+          display: flex;
+          align-items: flex-start; /* Align with content start */
+      }
+
+      .about-image img {
+          width: 100%;
+          height: 380px;
+          border-radius: 10px;
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Hidden Content */
+      .hidden-content {
+          display: none;
+      }
+
+      /* Responsive Styling */
+      @media (max-width: 992px) {
+          .about-section {
+              flex-direction: column;
+              text-align: center;
+          }
+
+          .about-content h2 {
+              font-size: 2rem;
+          }
+      }
+  </style>
+
+
+    <section class="about-section">
+        <!-- Left Side: Image -->
+        <div class="about-image ">
+            <img class="image-fluid"
+                src="img\DJI_0345.JPG"
+                alt="Innovative Learning"
+            />
+        </div>
+
+        <!-- Right Side: Content -->
+        <div class="about-content">
+            <h3>About Us</h3>
+            <h2>International Delhi Public School</h2>
+            <p>
+                Welcome to International Delhi Public School (IDPS), we are dedicated to fostering an environment that nurtures academic excellence and holistic development. Our state-of-the-art campus is thoughtfully designed to create an inspiring, safe, and engaging learning environment for every student.
+            </p>
+            <p>
+                Situated in the verdant landscape of Cherukupalli, known for its rich cultural heritage and storied past, our school emerges as a beacon of modern education deeply rooted in timeless values. 
+            </p>
+            <!-- Hidden Content -->
+            <div class="hidden-content" id="moreContent">
+                <p>
+                    Inaugurated in 2022 under the visionary guidance of Mr. PYK Reddy, our institution represents a harmonious blend of rural charm and global academic standards, emblematic of a new era in education.
+                </p>
+                <p>
+                    Our sprawling campus, spread over five acres of lush greenery, stands as a silent testament to the beauty of the Coromandel Coast. It offers a tranquil oasis, far from the distractions of urban life, where students can immerse themselves in learning and self-discovery.
+                </p>
+                <p>
+                    At the heart of our ethos lies a commitment to diversity and inclusivity. Our school proudly hosts a vibrant tapestry of students and educators from various backgrounds, fostering an environment where every culture, perspective, and individual is respected and valued.
+                </p>
+            </div>
+
+            <!-- Read More Button -->
+            <button class="about-btn" id="readMoreBtn">Read More</button>
+        </div>
+    </section>
+
+    <!-- JavaScript for Read More -->
+    <script>
+        document.getElementById("readMoreBtn").addEventListener("click", function () {
+            const hiddenContent = document.getElementById("moreContent");
+            const readMoreBtn = document.getElementById("readMoreBtn");
+
+            if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
+                hiddenContent.style.display = "block";
+                readMoreBtn.textContent = "Read Less";
+            } else {
+                hiddenContent.style.display = "none";
+                readMoreBtn.textContent = "Read More";
+            }
+        });
+    </script>
+
+<!-- Vision Section -->
+<section class="about-section">
+   
+
+    <!-- Right Side: Content -->
+    <div class="about-content">
+        <h3>About Us</h3>
+        <h2>Vision</h2>
+        <p>At International Delhi Public School Cherukupalli, our vision is to cultivate a nurturing environment where academic excellence, holistic development, and global citizenship go hand in hand. We aim to empower students to become innovative thinkers, compassionate leaders, and responsible global citizens who are equipped to face the challenges of a rapidly changing world. Through a commitment to a progressive and inclusive education system, we aspire to inspire lifelong learning, foster critical thinking, and instill values that promote social responsibility, cultural understanding, and environmental sustainability</p>
+        <p>
+            To empower every student to become a life-long learner who is responsible, productive, and an engaged citizen within the global community.
+        </p>    
+    </div>
+
+
+<!-- ---Vision Section Ends -->
+  <!-- Left Side: Image -->
+  <div class="about-image ">
+    <img class="image-fluid"
+        src="img\mission.jpg"
+        alt="Vision"
+    />
+</div>
+</section>
+
+<!-- ---------Vision Section Ends  ------------ -->
+
+
+    <!------------------------ Cards --------------------------------->
+
+
+
+    <!------------------------------Cards end ------------------------->
+<!-- 
+    <h2 class="text-center" style="color: #0E753B; font-family: Arial, Helvetica, sans-serif;">Our Moto</h2>
+ -->
+
+    <!-- Service Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                            <h5 class="mb-3">Skilled & Experienced Teachers</h5>
+                            <p>Teachers are very well Skilled and Experienced from KOTA </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5 class="mb-3">A/C and Digital Classes</h5>
+                            <p>Every Classes are A/C and teaching classes using digital/Smart Boards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                            <h5 class="mb-3">Frequest Unit Tests</h5>
+                            <p>To get Monitored and check the knowledge improvement most frequenlty tests will be conducted</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">Book Library</h5>
+                            <p>A Large scale of Book are availabe and All-time Library available with different kind of knowledge books</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!----------------------- Service End ----------------------------->
+
+
+<!-- ----------- OUR Moto Starts ------------ -->
+
+<style>
+  .info-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.info-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.info-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #0E753B;
+    margin: 5px auto 0;
+}
+
+.info-description {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    background-color: #0E753B;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card:hover .feature-title,
+.feature-card:hover .feature-text {
+    color: #fff;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    background-color: #0E753B;
+}
+
+.feature-icon img {
+    width: 30px;
+    height: 30px;
+    transition: filter 0.3s ease;
+}
+
+.feature-card:hover .feature-icon img {
+    filter: brightness(0) invert(1);
+}
+
+.feature-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-text {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.more-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0E753B;
+    border: 2px solid #0E753B;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.more-button:hover {
+    background-color: #0E753B;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+
+<section class="info-section">
+  <h2 class="info-title">Our Motto</h2>
+  <p class="info-description" style="font-weight: bolder;font-size: larger; color: #0E753B">
+    "Nurturing the leaders of tomorrow"  </p>
+  <div class="feature-cards">
+      <div class="feature-card">
+          <div class="feature-icon">
+              <img src="https://img.icons8.com/ios-filled/50/000000/communication.png" alt="Communication Icon">
+          </div>
+          <h3 class="feature-title">Communication</h3>
+          <p class="feature-text">Develop robust communication skills as a foundation for a well-rounded personality.</p>
+      </div>
+      <div class="feature-card">
+          <div class="feature-icon">
+              <img src="img\compassion-icon.png" alt="Compassion Icon">
+          </div>
+          <h3 class="feature-title">Compassion</h3>
+          <p class="feature-text">Cultivate values of empathy and kindness to shape students into responsible citizens.</p>
+      </div>
+      <div class="feature-card">
+          <div class="feature-icon">
+              <img src="img\competency-icon.png" alt="Competence Icon">
+          </div>
+          <h3 class="feature-title">Competence</h3>
+          <p class="feature-text">Foster holistic development by identifying and nurturing individual competence.</p>
+      </div>
+  </div>
+<br>
+  <div class="feature-cards">
+    <div class="feature-card">
+      <div class="feature-icon">
+          <img src="img\confidence-icon.png" alt="Confidence Icon">
+      </div>
+      <h3 class="feature-title">Confidence</h3>
+      <p class="feature-text">Emphasis on joyful, interactive learning and social skills to increase confidence.</p>
+  </div>
+    <div class="feature-card">
+        <div class="feature-icon">
+            <img src="https://img.icons8.com/ios-filled/50/000000/personal-growth.png" alt="Conviction Icon">
+        </div>
+        <h3 class="feature-title">Conviction</h3>
+        <p class="feature-text">Focus on strong conviction and discipline to build tomorrow's global leaders.</p>
+    </div>
+    <div class="feature-card">
+        <div class="feature-icon">
+            <img src="img\curiosity-icon.png" alt="Curiosity Icon">
+        </div>
+        <h3 class="feature-title">Curiosity</h3>
+        <p class="feature-text">Mentally stimulating activities to arouse innate intellectual curiosity.</p>
+    </div>
+   
+</div>
+  <button class="more-button">Read More</button>
+</section>
+
+
+<!-- -----------Our Moto Ends --------------- -->
+
+<!-- -------------Our facilities Trail STarts ----------------- -->
+<!-- Unique Features Section -->
+<style>
+    /* Unique Features Section Styles */
+    .unique-features-wrapper {
+        text-align: center;
+        padding: 60px 20px;
+    }
+    
+    .unique-features-wrapper .unique-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    .unique-features-wrapper .unique-description {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 40px;
+    }
+    
+    /* Unique Features Grid */
+    .unique-features-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        /* gap: 20px; */
+    }
+    
+    .unique-feature-column {
+        flex: 1;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .unique-feature-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .unique-icon-wrapper {
+        width: 130px;
+        height: 50px;
+        background-color: #0E753B;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    
+    .unique-feature-content {
+        text-align: left;
+    }
+    
+    .unique-feature-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+    }
+    
+    .unique-feature-text {
+        font-size: 0.9rem;
+        color: #666;
+        line-height: 1.5;
+    }
+    
+    /* Mobile Mockup */
+    .unique-mockup-container {
+        flex: 1;
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+    
+    .unique-mockup {
+        width: 250px;
+        height: 500px;
+        background: linear-gradient(135deg, #0E753B, #6c5b7b);
+        border-radius: 40px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .unique-mockup img {
+        width: 100%;
+        height: 500px;
+        border-radius: 30px;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .unique-features-grid {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .unique-mockup-container {
+            order: 1;
+        }
+    
+        .unique-feature-column {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        .unique-mockup {
+            width: 200px;
+            height: 400px;
+        }
+    
+        .unique-features-wrapper .unique-title {
+            font-size: 2rem;
+        }
+    
+        .unique-features-wrapper .unique-description {
+            font-size: 0.9rem;
+        }
+    }
+    </style>
+    
+    <section class="unique-features-wrapper">
+        <h2 class="unique-title">Our 5*Facilities</h2>
+        <p class="unique-description">We are dedicated to providing students a safe, secure, and enriching environment.</p>
+    
+        <div class="unique-features-grid">
+            <!-- Left Column -->
+            <div class="unique-feature-column">
+                <div class="unique-feature-item">
+                    <img src="img/campus-icon.png" alt="A/C Campus">
+                    <div class="unique-feature-content">
+                        <h3 class="unique-feature-title">A/C Campus</h3>
+                        <p class="unique-feature-text">Fully air-conditioned, designed to provide a comfortable learning environment year-round.</p>
+                    </div>
+                </div>
+                <div class="unique-feature-item">
+                    <img src="img/hostel-icon.png" alt="A/C Hostel">
+                    <div class="unique-feature-content">
+                        <h3 class="unique-feature-title">A/C Hostel</h3>
+                        <p class="unique-feature-text">Our 5-star hostel facilities provide a comfortable and secure environment for students.</p>
+                    </div>
+                </div>
+                <div class="unique-feature-item">
+                    <img src="img/bus-icon.png" alt="A/C Buses">
+                    <div class="unique-feature-content">
+                        <h3 class="unique-feature-title">A/C Buses</h3>
+                        <p class="unique-feature-text">We prioritize student comfort and safety during their commute.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Mobile Mockup -->
+            <div class="unique-mockup-container">
+                <div class="unique-mockup">
+                    <img src="img/photo-collage.png" alt="Mobile Mockup">
+                </div>
+            </div>
+    
+            <!-- Right Column -->
+            <div class="unique-feature-column">
+                <div class="unique-feature-item">
+                    <img src="img/cctv-icon.png" alt="CCTV">
+                    <div class="unique-feature-content">
+                        <h3 class="unique-feature-title">CCTV Surveillance</h3>
+                        <p class="unique-feature-text">Our campus is monitored by CCTV cameras and supervised by trained security personnel.</p>
+                    </div>
+                </div>
+                <div class="unique-feature-item">
+                    <img src="img/dance-icon.png" alt="Dance">
+                    <div class="unique-feature-content">
+                        <h3 class="unique-feature-title">Music, Dance and Arts</h3>
+                        <p class="unique-feature-text">Our music, dance, and art rooms are designed to nurture creativity and artistic expression.</p>
+                    </div>
+                </div>
+                <div class="unique-feature-item">
+                    <img src="img/technology-icon.png" alt="Technology">
+                    <div class="unique-feature-content">
+                        <h3 class="unique-feature-title">Modern Technology Integration</h3>
+                        <p class="unique-feature-text">Our classrooms are equipped with state-of-the-art technology to enhance the learning experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+<!-- -------------- Our Facilities Trail ends ------------- -->
+
+<!-- ----------Our 5*Facilities ------------- -->
+<!-- 
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "Cardo", serif;
+}
+
+
+
+
+.dd_heading{
+  text-align: center;
+  font-weight: bolder;
+ 
+}
+
+.page-content {
+  display: grid;
+  grid-gap: 1.7rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: var(--font-sans);
+}
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.d_card {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+@media (min-width: 600px) {
+  .d_card {
+    height: 250px;
+  }
+}
+.d_card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  -webkit-transition: -webkit-transform calc(var(--d) * 1.5) var(--e);
+  transition: -webkit-transform calc(var(--d) * 1.5) var(--e);
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  transition: transform calc(var(--d) * 1.5) var(--e),
+    -webkit-transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+.d_card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    color-stop(11.7%, rgba(0, 0, 0, 0.009)),
+    color-stop(22.1%, rgba(0, 0, 0, 0.034)),
+    color-stop(31.2%, rgba(0, 0, 0, 0.072)),
+    color-stop(39.4%, rgba(0, 0, 0, 0.123)),
+    color-stop(46.6%, rgba(0, 0, 0, 0.182)),
+    color-stop(53.1%, rgba(0, 0, 0, 0.249)),
+    color-stop(58.9%, rgba(0, 0, 0, 0.32)),
+    color-stop(64.3%, rgba(0, 0, 0, 0.394)),
+    color-stop(69.3%, rgba(0, 0, 0, 0.468)),
+    color-stop(74.1%, rgba(0, 0, 0, 0.54)),
+    color-stop(78.8%, rgba(0, 0, 0, 0.607)),
+    color-stop(83.6%, rgba(0, 0, 0, 0.668)),
+    color-stop(88.7%, rgba(0, 0, 0, 0.721)),
+    color-stop(94.1%, rgba(0, 0, 0, 0.762)),
+    to(rgba(0, 0, 0, 0.79))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.009) 11.7%,
+    rgba(0, 0, 0, 0.034) 22.1%,
+    rgba(0, 0, 0, 0.072) 31.2%,
+    rgba(0, 0, 0, 0.123) 39.4%,
+    rgba(0, 0, 0, 0.182) 46.6%,
+    rgba(0, 0, 0, 0.249) 53.1%,
+    rgba(0, 0, 0, 0.32) 58.9%,
+    rgba(0, 0, 0, 0.394) 64.3%,
+    rgba(0, 0, 0, 0.468) 69.3%,
+    rgba(0, 0, 0, 0.54) 74.1%,
+    rgba(0, 0, 0, 0.607) 78.8%,
+    rgba(0, 0, 0, 0.668) 83.6%,
+    rgba(0, 0, 0, 0.721) 88.7%,
+    rgba(0, 0, 0, 0.762) 94.1%,
+    rgba(0, 0, 0, 0.79) 100%
+  );
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: -webkit-transform calc(var(--d) * 2) var(--e);
+  transition: -webkit-transform calc(var(--d) * 2) var(--e);
+  transition: transform calc(var(--d) * 2) var(--e);
+  transition: transform calc(var(--d) * 2) var(--e),
+    -webkit-transform calc(var(--d) * 2) var(--e);
+}
+.d_card:nth-child(1):before {
+  background-image: url(./img/DJI_0345.JPG);
+}
+
+.d_card:nth-child(2):before {
+  background-image: url(./img/DJI_0365.JPG);
+}
+
+.d_card:nth-child(3):before {
+  background-image: url(./img/DJI_0501.JPG);
+}
+
+.d_card:nth-child(4):before {
+  background-image: url(./img/DJI_0499.JPG);
+}
+.d_card:nth-child(5):before {
+  background-image: url(./img/DJI_0349.JPG);
+}
+
+.d_card:nth-child(6):before {
+  background-image: url(./img/DJI_0366.JPG);
+}
+
+.d_card:nth-child(7):before {
+  background-image: url(./img/DJI_0379.JPG);
+}
+
+.d_card:nth-child(8):before {
+  background-image: url(./img/DJI_0352.JPG);
+}
+
+.content {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform var(--d) var(--e);
+  transition: -webkit-transform var(--d) var(--e);
+  transition: transform var(--d) var(--e);
+  transition: transform var(--d) var(--e), -webkit-transform var(--d) var(--e);
+  z-index: 1;
+}
+.content > * + * {
+  margin-top: 1rem;
+}
+
+.heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.data-content {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .d_card:after {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .content {
+    -webkit-transform: translateY(calc(100% - 4.5rem));
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .content > *:not(.heading) {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
+    -webkit-transition: opacity var(--d) var(--e),
+      -webkit-transform var(--d) var(--e);
+    transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e),
+      -webkit-transform var(--d) var(--e);
+  }
+
+  .d_card:hover,
+  .d_card:focus-within {
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .d_card:hover:before,
+  .d_card:focus-within:before {
+    -webkit-transform: translateY(-4%);
+    transform: translateY(-4%);
+  }
+  .d_card:hover:after,
+  .d_card:focus-within:after {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .d_card:hover .content,
+  .d_card:focus-within .content {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .d_card:hover .content > *:not(.heading),
+  .d_card:focus-within .content > *:not(.heading) {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(var(--d) / 8);
+    transition-delay: calc(var(--d) / 8);
+  }
+
+  .d_card:focus-within:before,
+  .d_card:focus-within:after,
+  .d_card:focus-within .content,
+  .d_card:focus-within .content > *:not(.heading) {
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+  }
+}
+
+</style>
+
+
+
+<div class="dd_heading">
+    <h3 class="text-center">Our 5*Facilities</h3>
+</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <p>International Delhi Public School (IDPS) is dedicated to providing students with an enriching, safe, and supportive learning environment that fosters academic excellence, creativity, and personal growth. Our state-of-the-art facilities are designed to create a comfortable and engaging space where students can thrive both academically and personally. Here’s a detailed look at the facilities offered at IDPS:</p>
+
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+   
+  
+  <main class="page-content">
+    <div class="d_card">
+      <div class="content">
+        <h2 class="heading">A/C Campus</h2>
+        <p class="data-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+    </div>
+    <div class="d_card">
+      <div class="content">
+        <h2 class="heading">A/C Hostel</h2>
+        <p class="data-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+    </div>
+    <div class="d_card">
+      <div class="content">
+        <h2 class="heading">A/C Buses</h2>
+        <p class="data-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+    </div>
+    <div class="d_card">
+      <div class="content">
+        <h2 class="heading">CCTV Surveillance</h2>
+        <p class="data-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+    </div>
+    <div class="d_card">
+        <div class="content">
+          <h2 class="heading">Music, Dance, And Art Rooms</h2>
+          <p class="data-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
+      </div>
+      <div class="d_card">
+        <div class="content">
+          <h2 class="heading">Additional Facilities And Support</h2>
+          <p class="data-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
+      </div>
+      <div class="d_card">
+        <div class="content">
+          <h2 class="heading">IDPS Commitment to Holistic Development</h2>
+          <p class="data-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
+      </div>
+      <div class="d_card">
+        <div class="content">
+          <h2 class="heading">Modern Technology Integration</h2>
+          <p class="data-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
+      </div>
+  </main> -->
+
+  
+
+<!-- -----------Our 5*Faciities End ---------- -->
+
+<br>
+
+<!-------------- Beyond Academics start ----------------->
+<style>
+    .beyond-heading {
+            text-align: center;
+            font-weight: bolder;
+            /* color: #2c5f2d; */
+            margin-bottom: 20px;
+        }
+
+       
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .beyond-description-box {
+                font-size: 1rem;
+                padding: 15px;
+            }
+
+            .beyond-heading {
+                font-size: 1.5rem;
+            }
+        }
+
+        
+</style>
+
+
+<h2 class="beyond-heading">Beyond Academics</h2>
+
+<!-------------- Beyond Academics Ends ----------------->
+
+
+<!-- -----------------------    Phylososy Starts       --------------------->
+
+
+<section class="about-section">
+
+           <!-- Left Side: Image -->
+  <div class="about-image ">
+    <img style="height: 300px;" class="image-fluid"
+        src="img\physcology.jpg"
+        alt="physcology"
+    />
+</div>
+
+    <!-- Right Side: Content -->
+    <div class="about-content">
+        <h3></h3>
+        <h2>Physcology</h2>
+        <p>What is meant by giving education? Is it just the transfer of knowledge from teachers to students? No. At International Delhi Public School, Cherukupalli, we believe true education happens when the child learns to think independently, learns to ask questions and even when he or she unlearns redundant knowledge. We inspire students to love the journey of learning through our teaching methods. Above all, your child will be attending classes with students coming from across the country. With such diversity to experience, your child’s world-view will expand.</p>
+    </div> 
+  
+</section>
+
+<!-- ------------------------   Phylosophy Ends ------------------ -->
+
+
+<!-------------- Faculty start ----------------->
+<section class="about-section">
+
+ 
+    <!-- Right Side: Content -->
+    <div class="about-content">
+        <h3></h3>
+        <h2>Faculty</h2>
+        <p>Each of our faculty members has a proven track record of educating students with a focus on building a strong fundamental knowledge and encouraging a zest for inquisitiveness among students. Our digital savvy teachers make full use of technology enabling interactive learning. Our teachers, with their academic plan, empower students to work and solve problems independently. At the same time, we focus on making students realise the value of collaboration.</p>    
+    </div> 
+
+              <!-- Left Side: Image -->
+  <div class="about-image ">
+    <img style="height: 300px;" class="image-fluid"
+        src="img\facuilty.jpg"
+        alt="Vision"
+    />
+</div>
+
+  
+</section>
+<!-------------- Faculty ends ----------------->
+
+<!-------------- Infrastructure start ----------------->
+<section class="about-section">
+
+           <!-- Left Side: Image -->
+ <div class="about-image ">
+    <img style="height: 300px;" class="image-fluid"
+        src="img\infra.JPG"
+        alt="Vision"
+    />
+ </div>
+
+   <!-- Right Side: Content -->
+   <div class="about-content">
+       <h3></h3>
+       <h2>Infrastructure</h2>
+       <p>The school is where your child will spend a huge amount of time in his/her academic life. Hence, it is of utmost importance that the school infrastructure should facilitate the mental and physical growth of your child with no obstruction whatsoever. The infrastructure of International Delhi Public School is certified by the local authorities to be safe and free of hazards. The expansive, well-ventilated building makes sure that students can sit and play comfortably with enough leg room. We also have a decently large playground for students to enjoy their school-time. We have kept a special focus on sanitation and availability of clean drinking water. In short, the school matches the infrastructural standard of any global school. Click on the Gallery menu to see for yourself.</p>    
+   </div>
+
+
+</section>
+<!-------------- Infrastructure ends ----------------->
+
+
+<!-- ----------------Phylosophy duplicate starts --------- -->
+
+
+
+    
+
+<!-- ------------------ Phylosophy duplicate ends -->
+
+</body>
+</html>

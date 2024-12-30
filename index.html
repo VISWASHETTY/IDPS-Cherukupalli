@@ -1,0 +1,2282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>IDPS CHERUKUPALLI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add this line -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img\logo.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    
+</head>
+
+<body>
+
+ 
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <style>
+        .col-sm-6 {
+            padding-top: 5px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .col-sm-12 {
+            padding-top: 5px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+      
+    </style>
+
+
+       <!-- Modal Triggered on Page Load -->
+    <div class="modal fade" id="onloadModal" tabindex="-1" aria-labelledby="onloadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content container" style="background-color: #fff; background-size: 100% 100%; background-repeat: no-repeat;">
+                <div class="row">
+                    <div class="col-12" id="popup-ttt">
+                        <div class="col-md-12" style="padding: 20px; text-align: right;">
+                            <!-- Close Button -->
+                            <button id="newadmissionForm2-close-btn" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="heading_main">
+                            <h2 class="side-heading text-center" style="color:#111111;">Admissions Open for <br> <b>2025 - 2026</b>
+                            </h2>
+                            <div class="separator m-auto" style="background: #fff 0% 0% no-repeat padding-box;"></div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="parentname" class="form-label">Parent Name:</label>
+                                <input type="text" class="form-control" id="parentname" placeholder="Enter Parent Name">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="childname" class="form-label">Child Name:</label>
+                                <input type="text" class="form-control" id="childname" placeholder="Enter Child Name">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="mobile" class="form-label">Mobile:</label>
+                                <input type="tel" class="form-control" id="mobile" placeholder="Enter Mobile Number">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="email" class="form-label">Email Address:</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="location" class="form-label">Location:</label>
+                                <textarea class="form-control" id="location" rows="3"></textarea>
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="grade" class="form-label">Grade:</label>
+                                <select class="form-select" id="grade">
+                                    <option selected>Select Grade</option>
+                                    <option value="Nursery">EY-1 (Nursery)</option>
+                                    <option value="PP1/LKG">EY-2 (PP1/LKG)</option>
+                                    <option value="PP2/UKG">EY-3 (PP2/UKG)</option>
+                                    <option value="Grade 1">Grade 1</option>
+                                    <option value="Grade 2">Grade 2</option>
+                                    <option value="Grade 3">Grade 3</option>
+                                    <option value="Grade 4">Grade 4</option>
+                                    <option value="Grade 5">Grade 5</option>
+                                    <option value="Grade 6">Grade 6</option>
+                                    <option value="Grade 7">Grade 7</option>
+                                    <option value="Grade 8">Grade 8</option>
+                                    <option value="Grade 9">Grade 9</option>
+                                    <option value="Grade 10">Grade 10</option>
+                                    <option value="Grade 11">Grade 11</option>
+                                    <option value="Grade 12">Grade 12</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3" style="padding-bottom: 20px;">
+                           <button type="submit" class="btn  btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Show the modal on page load
+        window.onload = function () {
+            const modal = new bootstrap.Modal(document.getElementById('onloadModal'));
+            modal.show();
+        };
+    </script>
+
+<!-- Navbar top starts from here -->
+<style>
+    /* Social Icons */
+    .social-icons {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .social-icon {
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        padding: 8px;
+        transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-icon:hover {
+        color: #fff;
+        background-color: #f39c12;
+        transform: scale(1.1);
+    }
+
+    /* Top Bar */
+    #header-top {
+        background-color: #204932;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    #header-top .helpline {
+        display: flex;
+        align-items: center;
+    }
+
+    #header-top .helpline i {
+        margin-right: 5px;
+    }
+
+    /* Logo and Text Alignment */
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo-container img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .text-container {
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .sub-text {
+        font-family: 'Alex Brush', cursive;
+        font-size: 12px;
+        color: #1E7E34;
+        margin: 0;
+    }
+
+    .main-text {
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight:bolder;
+        color: #1E7E34;
+        margin: 0;
+        display: block;
+        unicode-bidi: isolate;
+        
+    }
+
+    .place-text {
+        font-family: 'Montserrat';
+        font-size: 7px;
+        font-weight: bold;
+        color: #1E7E34;
+        margin: 0;
+        letter-spacing: 5px;
+    }
+
+    /* Announcement */
+    .announcement-container {
+        background-color: #0E753B;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .announcement-container::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    /* .announcement-container::-webkit-scrollbar-thumb {
+        background-color: #0E753B;
+        border-radius: 3px; 
+    } */
+
+    .announcement-container::-webkit-scrollbar-track {
+        background: #204932;
+    }
+
+    .announcement {
+        display: inline-block;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 20px;
+        animation: scroll-left 10s linear infinite;
+    }
+   
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    /* Navbar */
+    .navbar {
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+
+    .navbar .dropdown-menu {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family:"Heebo",sans-serif !important;
+        font-size: 15px;
+       
+
+    }
+
+    /* Mobile Adjustments */
+    @media (max-width: 768px) {
+        #header-top {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .social-icons {
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .logo-container {
+            flex-direction: column;
+        }
+
+        .navbar {
+            flex-direction: column;
+        }
+
+        .navbar .navbar-nav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .navbar .dropdown-menu {
+            position: static;
+            width: 100%;
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+        }
+
+        .navbar .dropdown-menu .dropdown-item {
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .text-container {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .main-text {
+            font-size: 18px;
+        }
+
+        .sub-text {
+            font-size: 16px;
+        }
+
+        .place-text {
+            font-size: 12px;
+        }
+
+        .announcement-container {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<header id="header">
+    <!-- Top Bar -->
+    <div id="header-top">
+        <div class="helpline">
+            <span>Admissions Helpline: <i class="bi bi-telephone-fill"></i> +91 7075164143 |
+                <i class="bi bi-envelope-fill"></i> admissions@idpscherukupalli.com</span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/people/Idps-Cherukupalli/61554664603652/" target="_blank"
+                class="social-icon" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/cherukupalliidps/" target="_blank" class="social-icon"
+                aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/CherukupalliDps/" target="_blank" class="social-icon" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linktr.ee/idpscherukupalli" target="_blank" class="social-icon" aria-label="Linktree">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20px">
+                    <path
+                        d="M13.5108 5.85343L17.5158 1.73642L19.8404 4.11701L15.6393 8.12199H21.5488V11.4268H15.6113L19.8404 15.5345L17.5158 17.8684L11.7744 12.099L6.03299 17.8684L3.70842 15.5438L7.93745 11.4361H2V8.12199H7.90944L3.70842 4.11701L6.03299 1.73642L10.038 5.85343V0H13.5108V5.85343ZM10.038 16.16H13.5108V24.0019H10.038V16.16Z"
+                        fill="#fff"></path>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/@idpscherukupalli" target="_blank" class="social-icon"
+                aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-container">
+        <div class="announcement">
+           <a style="text-decoration: none; color: white;" href=""> Welcome to IDPS Cherukupalli! Admissions Open for the 2025 Academic Year! Contact Us Today!</a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <div class="logo-container">
+               <a href="index.html"> <img src="img/logo.jpg" alt="School Logo"></a>
+               <a href="index.html"> <div class="text-container">
+                    <p class="sub-text">International</p>
+                    <h3 class="main-text">DELHI PUBLIC SCHOOL</h3>
+                    <p class="place-text">CHERUKUPALLI</p>
+                </div></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="about.html">About School</a></li>
+                            <li><a class="dropdown-item" href="founder.html">Message from Founder</a></li>
+                            <li><a class="dropdown-item" href="director.html">Message from Academic Director</a></li>
+                            <li><a class="dropdown-item" href="principal.html">Message from Principal</a></li>
+                            <li><a class="dropdown-item" href="mandatorydisclosure.html">Mandatory Disclosure</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="preprimary.html">Pre Primary</a></li>
+                            <li><a class="dropdown-item" href="primary.html">Primary School</a></li>
+                            <li><a class="dropdown-item" href="middleschool.html">Middle School</a></li>
+                            <li><a class="dropdown-item" href="Beyondacademics.html">Beyond Academics</a></li>
+                            <li><a class="dropdown-item" href="assesmentpolicy.html">Assessment & Promotion Rules</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Student Life </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Education framework.html">Education Framework</a></li>
+                            <li><a class="dropdown-item" href="extra-curricular activities.html">Extra-Curricular Activities</a></li>
+                            <li><a class="dropdown-item" href="Co-Curricular Activities.html">Co-Curricular Activities</a></li>
+                            <li><a class="dropdown-item" href="facilities.html">Facilities</a></li>
+                            <li><a class="dropdown-item" href="safety and security.html">Safety And Security</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Admissions</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="online registration.html">Online Registration</a></li>
+                            <li><a class="dropdown-item" href="offline registration.html">Offline Registration</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Enrollement</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Enrollement Guide</a></li>
+                            <li><a class="dropdown-item" href="">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="">Age Criteria</a></li>
+                            <li><a class="dropdown-item" href="">Documents Required</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="transport.html">Transport</a></li>
+                            <li><a class="dropdown-item" href="franchise.html">Franchise Enquiry</a></li>
+                           
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!------------------------------ Carousel Start ------------------------------------->
+    <div class="container-fluid p-0 ">
+        <div class="owl-carousel header-carousel position-relative">
+            <!-- Carousel Item 1 -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/DJI_0345.JPG" alt="Carousel Image 1">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">CBSE Curriculum</h5>
+                                <h1 class="display-3 text-white animated slideInDown">The Best Qualified Teachers</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">
+                                    IIT & NEET Programme from IV Class by India's Top Faculty from KOTA
+                                </p>
+                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="#" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Admissions Open</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Item 2 -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/DJI_0365.JPG" alt="Carousel Image 2">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">CBSE Curriculum</h5>
+                                <h1 class="display-3 text-white animated slideInDown">The Best Qualified Teachers</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">
+                                    IIT & NEET Programme from IV Class by India's Top Faculty from KOTA
+                                </p>
+                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="#" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Admissions Open</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------------------- Carousel End -=------------------------------>
+
+
+    <!-- ----------------------- Our Legency starts --------------- -->
+
+    
+    
+    <style>
+        .main-container {
+               text-align: center;
+               background-color: rgba(255, 255, 255, 0.9);
+               border-radius: 10px;
+               position: relative;
+               /* background-image: url('img/school bg.jpg');  */
+               background-size: cover;
+               background-repeat: no-repeat;
+               background-position: center;
+           }
+    
+           .header-title {
+               font-size: 1.2em;
+               color: #0E753B;
+               margin-bottom: 20px;
+               line-height: 1.4;
+               margin-top: 30px;
+           }
+    
+           .description-text {
+               font-size: 1em;
+               color: #555;
+               line-height: 1.8;
+               margin-bottom: 30px;
+           }
+    
+           .action-button {
+               display: inline-block;
+               padding: 12px 25px;
+               color: #2a623d;
+               font-weight: bold;
+               border: 2px solid #2a623d;
+               border-radius: 5px;
+               text-decoration: none;
+               transition: all 0.3s;
+           }
+    
+           .action-button:hover {
+               background-color: #2a623d;
+               color: #fff;
+           }
+    
+           .card-container {
+               display: flex;
+               justify-content: center;
+               gap: 20px;
+               margin-top: 40px;
+               padding-bottom: 30px;
+           }
+    
+           .card-item {
+               background-color: #fff;
+               border: 2px solid #0E753B;
+               border-radius: 10px;
+               padding: 15px;
+               text-align: center;
+               width: 150px;
+               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+               transition: transform 0.3s, box-shadow 0.3s;
+           }
+    
+           .card-item:hover {
+               transform: translateY(-10px);
+               box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+           }
+    
+           .card-title {
+               font-size: 1.5em;
+               color: #2a623d;
+               margin-bottom: 10px;
+           }
+    
+           .card-description {
+               font-size: 0.9em;
+               color: #555;
+           }
+    
+           @media (max-width: 768px) {
+               .main-container {
+                   padding: 40px 15px;
+               }
+    
+               .header-title {
+                   font-size: 1.2em;
+               }
+    
+               .description-text {
+                   font-size: 0.9em;
+               }
+    
+               .action-button {
+                   padding: 10px 20px;
+               }
+    
+               .card-container {
+                   flex-direction: column;
+                   align-items: center;
+               }
+           }
+    </style>
+    
+    <div class="main-container">
+       <h2 class="mt-4" style="padding-top: 30px;color: #0E753B;">A Legacy of Excellence</h2>
+       <div class="container">
+           <div class="row">
+               <div class="col-md-2"></div>
+               <div class="col-md-8">
+                   <h1 class="header-title">With a rich history and a legacy of producing outstanding scholars, IDPS Cherukupalli is dedicated to providing a holistic education that prepares students for the challenges of the future.</h1>
+               </div>
+               <div class="col-md-2"></div>
+           </div>
+       </div>
+       <div class="container">
+           <div class="row">
+               <div class="col-md-1"></div>
+               <div class="col-md-10">
+                   <p class="description-text">It is the aim of Delhi Public School to provide the best possible education to its students. Our primary aim is to develop in the student qualities of integrity, honesty, trust, tolerance, and compassion, to promote a spirit of enquiry, to foster a scientific temper within the bonds of humanism, to help the student to become a meaningful part of their environment and to know that courage and industry have their due reward.</p>
+               <div class="col-md-1"></div>
+               </div>
+           </div>
+       </div>
+       <!-- <a href="#" class="action-button">READ MORE</a> -->
+    
+       <div class="card-container">
+           <div class="card-item">
+               <h2 class="card-title">2022</h2>
+               <p class="card-description">Year of Inception</p>
+           </div>
+           <div class="card-item">
+               <h2 class="card-title">10+</h2>
+               <p class="card-description">Labs</p>
+           </div>
+           <div class="card-item">
+               <h2 class="card-title">16+</h2>
+               <p class="card-description">Sports Facilities</p>
+           </div>
+           <div class="card-item">
+               <h2 class="card-title">3</h2>
+               <p class="card-description">Academic Wings</p>
+           </div>
+       </div>
+    </div>
+    
+    
+    
+        <!---------------------------- Our Legacy ENds -------------------------- -->
+
+
+    <!------------------------ Cards --------------------------------->
+
+
+
+    <!------------------------------Cards end ------------------------->
+<!-- 
+    <h2 class="text-center" style="color: #0E753B; font-family: Arial, Helvetica, sans-serif;">Why IDPS ?</h2>
+ -->
+
+    <!-- Service Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                            <h5 class="mb-3">Skilled & Experienced Teachers</h5>
+                            <p>Teachers are very well Skilled and Experienced from KOTA </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5 class="mb-3">A/C and Digital Classes</h5>
+                            <p>Every Classes are A/C and teaching classes using digital/Smart Boards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                            <h5 class="mb-3">Frequest Unit Tests</h5>
+                            <p>To get Monitored and check the knowledge improvement most frequenlty tests will be conducted</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">Book Library</h5>
+                            <p>A Large scale of Book are availabe and All-time Library available with different kind of knowledge books</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!----------------------- Service End ----------------------------->
+
+
+    <!-------------------------------- About Start ------------------------->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/DJI_0363.JPG" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h3 class="mb-4" style="color: #0E753B;">Welcome to IDPS Cherukupalli</h3>
+                    <p class="mb-4">Ethics and Values can only be modeled and can’t be taught from textbooks or syllabus. He believes that Ethics & Values can be passed on to students only through discipline & committed staff.</p>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="about.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------ About End ---------------->
+
+    <!-------------------- Why Choose Us Start ----------------->
+    <style>
+      /* Section Styling */
+      .why-choose-section {
+        padding: 50px 0;
+      }
+  
+      .why-choose-title {
+        color: #0E753B;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+  
+      .why-choose-content p {
+        color: #555;
+        line-height: 1.8;
+      }
+  
+      .accordion-button {
+        font-weight: 600;
+        color: #333; /* Default text color */
+        background-color: #fff; /* Default background color */
+        border: none;
+        transition: background-color 0.3s, color 0.3s;
+      }
+  
+      /* Highlight color when the button is expanded */
+      .accordion-button:not(.collapsed) {
+        background-color: #0E753B !important; /* Green background */
+        color: #fff !important; /* White text */
+      }
+  
+      .accordion-button::after {
+        transition: transform 0.3s ease-in-out;
+      }
+  
+      /* Rotate the arrow when expanded */
+      .accordion-button:not(.collapsed)::after {
+        transform: rotate(180deg);
+      }
+  
+      .accordion-body {
+        color: #555;
+        font-size: 0.95rem;
+      }
+  
+      /* Image Styling */
+      .choose-img {
+        width: 100%;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+  
+      .choose-img:hover {
+        transform: scale(1.05);
+      }
+  
+      /* Responsive */
+      @media (max-width: 768px) {
+        .why-choose-section {
+          text-align: center;
+        }
+  
+        .choose-img {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+ 
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+      <div class="container">
+        <div class="row align-items-center">
+          
+  
+          <!-- Right Side: Content -->
+          <div class="col-md-6">
+            <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+            <h3 class="why-choose-title">Why Choose Us</h3>
+            <p>
+              Far far away, behind the word mountains, far from the countries Vokalia
+              and Consonantia, there live the blind texts.
+            </p>
+  
+            <!-- Single Accordion for All Features -->
+            <div class="accordion" id="whyChooseAccordion">
+              <!-- First Accordion Item -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                  >
+                    Good Teachers and Staffs
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#whyChooseAccordion"
+                >
+                  <div class="accordion-body">
+                    Far far away, behind the word mountains, far from the countries
+                    Vokalia and Consonantia, there live the blind texts.
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Second Accordion Item -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                  >
+                    We Value Good Characters
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#whyChooseAccordion"
+                >
+                  <div class="accordion-body">
+                    We encourage building strong moral values and good character
+                    among students for a better future.
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Third Accordion Item -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                  >
+                    Your Children are Safe
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#whyChooseAccordion"
+                >
+                  <div class="accordion-body">
+                    Safety and security of your children is our top priority, with
+                    advanced monitoring systems in place.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Right Content -->
+
+           <!-- Left Side: Image -->
+          <div class="col-md-6">
+            <img
+              src="img\DJI_0345.JPG"
+              alt="Child Learning"
+              class="choose-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!------------- Why Chooose Us End   -->
+
+
+        
+
+
+<!-- ----------- Why IDPS Starts ------------ -->
+
+<style>
+
+.features-title {
+  /* font-size: 1.5rem; */
+  color: #0E753B;
+  margin-bottom: 10px;
+}
+
+.features-subtitle {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 30px;
+}
+    .info-section {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #fff;
+  }
+  
+  .info-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      position: relative;
+      display: inline-block;
+  }
+  
+  .info-title::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background-color: #0E753B;
+      margin: 5px auto 0;
+  }
+  
+  .info-description {
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 30px;
+  }
+  
+  .feature-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .feature-card {
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+      transform: translateY(-10px);
+      background-color: #0E753B;
+      color: #fff;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-card:hover .feature-title,
+  .feature-card:hover .feature-text {
+      color: #fff;
+  }
+  
+  .feature-icon {
+      width: 60px;
+      height: 60px;
+      background: #fff;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+  }
+  
+  .feature-card:hover .feature-icon {
+      background-color: #fff;
+      color: #FFF;
+  }
+  
+  .feature-icon img {
+      width: 30px;
+      height: 30px;
+      transition: filter 0.3s ease;
+  }
+  
+  .feature-card:hover .feature-icon img {
+      filter: brightness(0) invert(1);
+  }
+  
+  .feature-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+  }
+  
+  .feature-text {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.6;
+  }
+  
+  .more-button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #0E753B;
+      border: 2px solid #0E753B;
+      border-radius: 5px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .more-button:hover {
+      background-color: #0E753B;
+      color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+      .feature-cards {
+          flex-direction: column;
+          align-items: center;
+      }
+  }
+  </style>
+  
+  <section class="info-section text-center py-4 mt-2">
+    <h3 class="features-title">Features that make us stand out</h3>
+    <p class="features-subtitle">World class campus</p>
+    
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-md-3">
+                <div class="feature-card d-flex flex-column align-items-center p-3 shadow-sm h-100">
+                    <div class="feature-icon mb-3">
+                        <i class="fa fa-3x fa-graduation-cap text-primary"></i>
+                    </div>
+                    <h3 class="feature-title">Skilled & Experienced Teachers</h3>
+                    <p class="feature-text">Teachers are very well skilled and experienced from KOTA.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-card d-flex flex-column align-items-center p-3 shadow-sm h-100">
+                    <div class="feature-icon mb-3">
+                        <i class="fa fa-3x fa-globe text-primary"></i>
+                    </div>
+                    <h3 class="feature-title">A/C and Digital Classes</h3>
+                    <p class="feature-text">Every class is A/C and uses digital/smart boards.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-card d-flex flex-column align-items-center p-3 shadow-sm h-100">
+                    <div class="feature-icon mb-3">
+                        <i class="fa fa-3x fa-home text-primary"></i>
+                    </div>
+                    <h3 class="feature-title">Frequent Unit Tests</h3>
+                    <p class="feature-text">Tests are conducted frequently to monitor and improve knowledge.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-card d-flex flex-column align-items-center p-3 shadow-sm h-100">
+                    <div class="feature-icon mb-3">
+                        <i class="fa fa-3x fa-book-open text-primary"></i>
+                    </div>
+                    <h3 class="feature-title">Book Library</h3>
+                    <p class="feature-text">A large library with a wide variety of books is available.</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <!-- <button class="btn btn-primary mt-3">Read More</button> -->
+ </section>
+
+  
+  
+  <!-- -----------Why IDPS Ends --------------- -->
+
+
+<!-- --------------cards -------------- -->
+<!-- <section class="features-section">
+    <h1 class="features-title">Features that make us stand out</h1>
+    <p class="features-subtitle">World class campus</p>
+    <div class="features-container">
+      <div class="feature-card">
+        <div class="feature-icon">📘</div>
+        <h3>Balance of academics and co-curricular</h3>
+        <p>A wide spectrum of co-curricular activities to cover all facets of knowledge and child development.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🤝</div>
+        <h3>Competitive edge</h3>
+        <p>Academics for regular grades is supplemented by IIT and Medical foundational courses to prepare students for a competitive edge.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏫</div>
+        <h3>Exceptional infrastructure</h3>
+        <p>State-of-the-art learning spaces, laboratories, play fields, and hostels engender a perfect environment for development.</p>
+      </div>
+    </div>
+  </section>
+
+  <Style>
+
+.features-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #fdecec, #edf6fe);
+}
+
+.features-title {
+  font-size: 2.5rem;
+  color: #2d2d2d;
+  margin-bottom: 10px;
+}
+
+.features-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #4CAF50;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #2d2d2d;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  </Style>
+
+<script>
+    // Add smooth animation when cards appear
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".feature-card");
+  cards.forEach((card, index) => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(20px)";
+    setTimeout(() => {
+      card.style.transition = "all 0.5s ease";
+      card.style.opacity = "1";
+      card.style.transform = "translateY(0)";
+    }, index * 200);
+  });
+});
+
+</script> -->
+
+
+
+
+
+
+    <!-- -----------------Latest Happendings ----------- -->
+<style>
+     .latest-happenings {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .latest-happenings h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+        }
+
+        .happenings-container {
+            display:flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            /* justify-content: center; */
+            width: 1000px;
+            margin: 0 auto; 
+           
+        }
+
+        .main-event {
+            flex: 3;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            color: black;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+           
+        }
+
+        .main-event img {
+            
+            width: 100%;
+            height: auto;
+        }
+
+        .main-event .event-content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .main-event .event-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .main-event .event-content p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .main-event .event-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #ff8c00;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .side-events {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .side-event {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            color: black;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .side-event img {
+            width: 100%;
+            height: auto;
+        }
+
+        .side-event .event-content {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .side-event .event-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .side-event .event-content p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .side-event .event-number {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #ff8c00;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .view-all {
+            margin-top: 30px;
+        }
+
+        .view-all a {
+            text-decoration: none;
+            color: white;
+            background: #0E753B;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .view-all a:hover {
+            background: #0E753B;
+           
+        }
+
+       
+
+        @media (max-width: 768px) {
+            .happenings-container {
+                flex-direction: column;
+            }
+
+            .main-event, .side-events {
+                flex: none;
+            }
+        }
+</style>
+
+<div class="latest-happenings">
+    <h2>Latest Happenings</h2>
+    <div class="happenings-container">
+        <!-- Main Event -->
+        <div class="main-event">
+            <span class="event-tag">EVENTS</span>
+            <img src="img\diwali celebration.jpg" class="img-fluid" alt="Diwali Celebration">
+            <div class="event-content">
+                <h2>Sparkle Fest: A Diwali Celebration</h2>
+                <p>18 November 2024</p>
+            </div>
+        </div>
+
+        <!-- Side Events -->
+        <div class="side-events">
+            <div class="side-event">
+                <span class="event-number">02</span>
+                <img src="img\garba fu.jpg" class="img-fluid" alt="Garba Fun">
+                <div class="event-content">
+                    <h3>Twirl & Swirl: Garba Fun</h3>
+                    <p>17 November 2024</p>
+                </div>
+            </div>
+
+            <div class="side-event">
+                <span class="event-number">03</span>
+                <img src="img\dussehra.jpg" class="img-fluid" alt="Earthquake Drill">
+                <div class="event-content">
+                    <h3>Dusshera Celebrations</h3>
+                    <p>15 November 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="view-all">
+        <a href="#">View All</a>
+    </div>
+</div>
+<!-- -------------------Latest happeings ends -->
+ 
+<!-- ----------------Updates container --- -->
+ <!-- <style> 
+    .updates-container {
+            background-color: #fff;
+            box-shadow: #111111;
+            color: white;
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .updates-container h2 {
+            margin: 0 0 15px 0;
+            font-size: 25px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #FFF;
+        }
+
+        .updates-slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 140%; /* Adjust based on the number of updates */
+        }
+
+        .update {
+            flex: 0 0 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .update-item {
+            flex: 1;
+            text-align: center;
+        }
+
+        .update-date {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f8b400;
+        }
+
+        .update-text {
+            font-size: 15px;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .nav-buttons {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .nav-button {
+            background-color: #f8b400;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #d19400;
+        }
+
+        @media (max-width: 768px) {
+            .update-text {
+                font-size: 0.9rem;
+            }
+
+            .update-date {
+                font-size: 1.2rem;
+            }
+
+            .nav-button {
+                width: 30px;
+                height: 30px;
+                font-size: 1rem;
+            }
+        }
+ </style>
+<div class="updates-container">
+        <h2>Important Updates</h2>
+        <div class="updates-slider" id="updatesSlider">
+            <div class="update-item">
+                <div class="update-date">Dec 18</div>
+                <div class="update-text">Date Sheet Class X: (Re-Exam) Post Mid-Term Examination</div>
+            </div>
+            <div class="update-item">
+                <div class="update-date">Dec 18</div>
+                <div class="update-text">Date Sheet Class XII: (Re-Exam) Post Mid-Term Examination</div>
+            </div>
+            <div class="update-item">
+                <div class="update-date">Dec 17</div>
+                <div class="update-text">Date Sheet - Pre-Board Exam: Class X and XII (2024-25)</div>
+            </div>
+            <div class="update-item">
+                <div class="update-date">Dec 16</div>
+                <div class="update-text">Additional Notice: Important Guidelines for Exams</div>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button" id="prevButton">&#x25C0;</button>
+            <button class="nav-button" id="nextButton">&#x25B6;</button>
+        </div>
+    </div>
+
+    <script>
+        const slider = document.getElementById('updatesSlider');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+        const itemsToShow = 3; // Adjust based on how many updates are visible at once
+        const updateItems = Array.from(slider.children);
+        const totalItems = updateItems.length;
+        const totalPages = Math.ceil(totalItems / itemsToShow);
+        let currentIndex = 0;
+
+        function updateSliderPosition() {
+            slider.style.transform = `translateX(-${currentIndex * 100 / itemsToShow}%)`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = totalPages - 1;
+            }
+            updateSliderPosition();
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < totalPages - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            updateSliderPosition();
+        });
+
+        updateSliderPosition();
+    </script>
+ -->
+
+
+
+
+
+
+    <!-- ----------- Infrastructure ------------ -->
+  <style>
+    /* Add Custom Spacing for Category Cards */
+.category-card {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px; /* Default Size */
+  height: 150px;
+  margin: 10px; /* Adjust spacing between photos */
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Category Overlay Styling */
+.category-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.category-overlay small {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .category-card {
+    width: 120px;
+    height: 120px;
+    margin: 8px; /* Adjust gap on tablets */
+  }
+  
+  /* Adjust the overlay font size and text positioning for better fit */
+  .category-overlay {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .category-card {
+    width: 100px;
+    height: 100px;
+    margin: 5px; /* Adjust gap on smaller screens */
+  }
+
+  /* Adjust the overlay font size and text positioning for better fit */
+  .category-overlay {
+    font-size: 0.9rem;
+    padding: 6px 0;
+  }
+}
+
+
+  </style>
+
+<section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" style="color: #0E753B; font-family: Arial, Helvetica, sans-serif;">Our Great Infrastructure</h2>
+      <div class="row justify-content-center gx-4 gy-4">
+        <!-- IT & Software -->
+        <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+          <div class="category-card ">
+            <img src="img/DJI_0345.JPG" class="img-fluid" alt="IT & Software">
+            <div class="category-overlay">School</div>
+          </div>
+        </div>
+        <!-- Music -->
+        <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+          <div class="category-card">
+            <img src="img/DJI_0366.JPG" class="img-fluid" alt="Music">
+            <div class="category-overlay">Classes</div>
+          </div>
+        </div>
+        <!-- Photography -->
+        <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+          <div class="category-card">
+            <img src="img/DJI_0352.JPG" class="img-fluid" alt="Photography">
+            <div class="category-overlay">Labs</div>
+          </div>
+        </div>
+        <!-- Marketing -->
+        <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+          <div class="category-card">
+            <img src="img/DJI_0501.JPG" class="img-fluid" alt="Marketing">
+            <div class="category-overlay">Hostel</div>
+          </div>
+        </div>
+        <!-- Health -->
+        <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+          <div class="category-card">
+            <img src="img/DJI_0379.JPG" class="img-fluid" alt="Health">
+            <div class="category-overlay">Sports</div>
+          </div>
+        </div>
+        <!-- Audio Video -->
+        <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+          <div class="category-card">
+            <img src="img/DJI_0363.JPG" class="img-fluid" alt="Audio Video">
+            <div class="category-overlay">Music & Dance</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+   
+<br>
+<br>
+    <!------------------- Infrastrucutre end ------------ -->
+
+    <!-- --------------Latest News ------------------ -->
+<!-- 
+    <section class="blog-section">
+      <div class="section-header">
+          <h2 style="color: #0E753B; font-family: Arial, Helvetica, sans-serif;">Latest Events </h2>
+ 
+      </div>
+
+      <br>
+
+      <div class="blog-container">
+        
+          <div class="blog-card">
+              <div class="blog-image">
+                  <img src="img\DJI_0365.JPG" alt="Blog Image 1">
+              </div>
+              <div class="blog-content">
+                  <p class="blog-meta">
+                      JANUARY 30, 2020 &nbsp; ADMIN &nbsp; <span class="comments"></span>
+                  </p>
+                  <h3 class="blog-title">
+                      Even the all-powerful Pointing has no control about the blind texts
+                  </h3>
+              </div>
+          </div>
+
+    
+          <div class="blog-card">
+              <div class="blog-image">
+                  <img src="img\DJI_0345.JPG" alt="Blog Image 2">
+              </div>
+              <div class="blog-content">
+                  <p class="blog-meta">
+                      JANUARY 30, 2020 &nbsp; ADMIN &nbsp; <span class="comments"></span>
+                  </p>
+                  <h3 class="blog-title">
+                      Even the all-powerful Pointing has no control about the blind texts
+                  </h3>
+              </div>
+          </div>
+
+       
+          <div class="blog-card">
+              <div class="blog-image">
+                  <img src="img\DJI_0499.JPG" alt="Blog Image 3">
+              </div>
+              <div class="blog-content">
+                  <p class="blog-meta">
+                      JANUARY 30, 2020 &nbsp; ADMIN &nbsp; <span class="comments"></span>
+                  </p>
+                  <h3 class="blog-title">
+                      Even the all-powerful Pointing has no control about the blind texts
+                  </h3>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <style>
+
+/* Blog Section Styles */
+.blog-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.subheading {
+    color: #8bc34a;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Blog Container */
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.blog-image img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.blog-meta {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.comments {
+    color: #8bc34a;
+    font-weight: bold;
+}
+
+.blog-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-card {
+        max-width: 90%;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}
+  </style> -->
+  <!----------------------- Latest News Ends  ----------------------------->
+
+
+    <!----------- Counter Start ------------------>
+<!-- 
+    <section class="counter-section">
+      <div class="counter-box">
+        <h2 class="counter text-white" data-target="1500">0  </h2>
+        <p style="font-weight: bolder; color: white;">Total Students</p>
+      </div>
+      <div class="counter-box">
+        <h2 class="counter text-white" data-target="250">0</h2>
+        <p style="font-weight: bolder; color: white;">Total Teachers</p>
+      </div>
+      <div class="counter-box">
+        <h2 class="counter text-white" data-target="3000">0</h2>
+        <p style="font-weight: bolder; color: white;">Happy Parents</p>
+      </div>
+      <div class="counter-box">
+        <h2 class="counter text-white" data-target="5">0</h2>
+        <p style="font-weight: bolder; color: white;">Years Experience</p>
+      </div>
+    </section>
+
+    <style>
+      .counter-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 50px 10px;
+  border-radius: 50px 50px 0 0;
+  background: #0b753b; 
+}
+
+.counter-box {
+  flex: 1;
+  margin: 0 20px;
+  padding: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.counter {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+
+  counters.forEach((counter) => {
+    counter.innerText = "0";
+    const updateCounter = () => {
+      const target = +counter.getAttribute("data-target");
+      const current = +counter.innerText;
+      const increment = target / 200;
+
+      if (current < target) {
+        counter.innerText = `${Math.ceil(current + increment)}`;
+        setTimeout(updateCounter, 10);
+      } else {
+        counter.innerText = target; // Set the final value
+      }
+    };
+    updateCounter();
+  });
+});
+
+    </script> -->
+
+     
+    <!-------------------- Counter End  ----------------->
+
+    <!------ Gallery -------->
+<!-- 
+    <h2 class="text-center text-success mt-4">Gallery</h2>
+
+
+ 
+    <section class="hexagon-gallery">
+        <div class="hex"><img src="D:\IDPS\elearning-html-template\elearning-html-template\img\078A0054.JPG" alt="some"></div>
+        <div class="hex"><img src="D:\IDPS\elearning-html-template\elearning-html-template\img\DJI_0352.JPG" alt="some"></div>
+        <div class="hex"><img src="D:\IDPS\elearning-html-template\elearning-html-template\img\DJI_0363.JPG" alt="some"></div>
+        <div class="hex"><img src="D:\IDPS\elearning-html-template\elearning-html-template\img\DJI_0379.JPG" alt="some"></div>
+        <div class="hex"><img src="D:\IDPS\elearning-html-template\elearning-html-template\img\DJI_0366.JPG" alt="some"></div>
+        <div class="hex"><img src="D:\IDPS\elearning-html-template\elearning-html-template\img\DJI_0349.JPG" alt="some"></div>
+        <div class="hex"><img src="D:\IDPS\elearning-html-template\elearning-html-template\img\DJI_0367.JPG" alt="some"></div>
+        <div class="hex"><img src="D:\IDPS\elearning-html-template\elearning-html-template\img\DJI_0501.JPG" alt="some"></div>
+        <div class="hex"><img src="D:\IDPS\elearning-html-template\elearning-html-template\img\DJI_0345.JPG" alt="some"></div>
+        <div class="hex"><img src="D:\IDPS\elearning-html-template\elearning-html-template\img\DJI_0365.JPG" alt="some"></div>
+      </section> -->
+
+      <!------- Gallery End ------->
+
+    
+
+      <!---------------- Footer ----------- -->
+      <!-- <style>
+      
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer h6 {
+            font-weight: bold;
+            color: #0E573B;
+            text-transform: uppercase;
+        }
+        footer a {
+            color: #000;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+        footer a:hover {
+            color: #0E573B;
+            transform: scale(1.1);
+        }
+        .social-icons i {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: #6c757d;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .social-icons i:hover {
+            color: #0E573B;
+            transform: scale(1.2);
+        }
+        .footer-logo {
+            margin-bottom: 15px;
+        }
+    </style>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-logo">
+                    <img src="img\idpslogo.png" alt="International Delhi Public School" style="height: 150px; width: 180px;">
+                    <h5 class="mt-2 text-bold" style="color: #0E573B;">INTERNATIONAL DELHI PUBLIC SCHOOL</h5>
+                    <h5 class="mt-2" style="color: #0E573B;">CHERUKUPALLI</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h6>Useful Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Mandatory Disclosure</a></li>
+                    <li><a href="#">Enrollement</a></li>
+                    <li><a href="#">Hostel Life</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+               
+                <h6>Other Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Awards and Accolades</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Student IT Policy</a></li>
+                    <li><a href="#">Safeguarding Policy</a></li>
+                    <li><a href="#">Other School Policies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <h6>Our Helpline Number</h6>
+                <ul class="list-unstyled">
+                    <li>Mobile/WhatsApp: 7799 7979 31, 7799 7979 32</li>
+                    <li> Landline No: 08648293020</li>
+
+                </ul>
+                
+               
+            </div>
+            <div class="col-md-4">
+                <h6>Email ID </h6>
+                <p>Info@idpscherukupalli.com</p>
+                
+            </div>
+            <div class="col-md-4">
+                <h6>Our Address</h6>
+                <ul class="list-unstyled">
+                    
+                    <li><a href="#">DR NO 9-168 CHERUKUPALLI (V) CHERUKUPALLI (M) GUNTUR DISTRICT NEAR JAIHIND TAIKIES GUNTUR
+                        ANDHRA PRADESH-INDIA,
+                        PIN 522309</a></li>
+                      
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+       
+        <div class="row mt-3">
+            <div class="col-12">
+                <p class="text-bold" style="color: #0E573B;font-weight: bolder;">&copy; IDPS CHERUKUPALLI @2024 </p>
+            </div>
+        </div>
+    </div>
+</footer> -->
+
+<!------------------ Footer end -------------->
+
+
+
+<style>
+    footer.footer {
+        background: #fbfcfb;
+        color: #fff;
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+
+    .footer h5 {
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: #0E753B;
+    }
+
+    .footer address {
+        font-style: normal;
+        color: #fff;
+        line-height: 1.5; 
+    }
+
+    .footer strong {
+        color: #0E753B;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+        border-top: 1px solid #444;
+        padding-top: 10px;
+        text-align: center;
+        color: #444;
+        font-size: 14px;
+    }
+
+    .footer ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .footer ul li {
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .footer h5 {
+            font-size: 1.1rem;
+        }
+    }
+</style>
+
+<footer class="footer" style="background-color: #FFF;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <img src="https://idpscherukupalli.com/assets/img/idpsfooter.png" alt="" style="width:150px;">
+            </div>
+            <div class="col-md-3">
+                <h5>Our Helpline</h5>
+                <address style="color: black;">
+                    <strong>PARENTS HELP LINE DESK</strong><br>
+                    Mobile No: +91-9848000371<br>
+                    <br>
+                    <strong>RECEPTION HELPLINE</strong><br>
+                    Mobile/WhatsApp: 7799 7979 31, 7799 7979 32<br>
+                    Landline No: 08648293020<br>
+                   
+                </address>
+            </div>
+
+            <div class="col-md-3">
+                <h5>For Admission</h5>
+                <ul class="list-unstyled" style="color: black;">
+                    <li><strong>ADMISSION</strong></li>
+                    <li>Mobile/WhatsApp: +91-7075164143</li>
+                    <li>admissions@idpscherukupalli.com</li>
+                    <!-- <li><strong>RECRUITMENT HELPLINE</strong></li>
+                    <li>Mobile/WhatsApp: +91-7032344143</li>
+                    <li>recruitment@idpscherukupalli.com</li> -->
+                    <br>
+                    <strong>EMAIL YOUR QUERIES</strong><br>
+                    info@idpscherukupalli.com
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Our Address</h5>
+                <address style="color: black; font-size: 15px;">
+                    DR NO 9-168 CHERUKUPALLI (V) CHERUKUPALLI (M)<br>
+                    GUNTUR DISTRICT NEAR JAIHIND TAIKIES<br>
+                    GUNTUR, ANDHRA PRADESH-INDIA<br>
+                    PIN: 522309<br>
+                    <!-- <strong>Email:</strong> info@idpscherukupalli.com -->
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Your Company. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    
+
+        
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

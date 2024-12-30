@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Director'a Message</title>
+ 
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Stylesheet -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <a href="https://www.flaticon.com/free-icons/compassion" title="compassion icons"></a>
+
+
+
+
+    <meta charset="utf-8">
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add this line -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img\logo.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+     <!-- Back to Top -->
+     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+     <!-- JavaScript Libraries -->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="lib/wow/wow.min.js"></script>
+     <script src="lib/easing/easing.min.js"></script>
+     <script src="lib/waypoints/waypoints.min.js"></script>
+     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+ 
+     <!-- Template Javascript -->
+     <script src="js/main.js"></script>
+
+</head>
+<body>
+
+
+  
+<!-- Navbar top starts from here -->
+<style>
+  /* Social Icons */
+  .social-icons {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      align-items: center;
+  }
+
+  .social-icon {
+      text-decoration: none;
+      font-size: 18px;
+      color: #fff;
+      padding: 8px;
+      transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+      width: 39px;
+      height: 39px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .social-icon:hover {
+      color: #fff;
+      background-color: #f39c12;
+      transform: scale(1.1);
+  }
+
+  /* Top Bar */
+  #header-top {
+      background-color: #204932;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 20px;
+      font-size: 14px;
+      flex-wrap: wrap;
+  }
+
+  #header-top .helpline {
+      display: flex;
+      align-items: center;
+  }
+
+  #header-top .helpline i {
+      margin-right: 5px;
+  }
+
+  /* Logo and Text Alignment */
+  .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .logo-container img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .text-container {
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .sub-text {
+        font-family: 'Alex Brush', cursive;
+        font-size: 12px;
+        color: #1E7E34;
+        margin: 0;
+    }
+
+    .main-text {
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight:bolder;
+        color: #1E7E34;
+        margin: 0;
+        display: block;
+        unicode-bidi: isolate;
+        
+    }
+
+    .place-text {
+        font-family: 'Montserrat';
+        font-size: 7px;
+        font-weight: bold;
+        color: #1E7E34;
+        margin: 0;
+        letter-spacing: 5px;
+    }
+
+  /* Announcement */
+  .announcement-container {
+      background-color: #0E753B;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      white-space: nowrap;
+  }
+
+  .announcement-container::-webkit-scrollbar {
+      height: 6px;
+  }
+
+  /* .announcement-container::-webkit-scrollbar-thumb {
+      background-color: #0E753B;
+      border-radius: 3px; 
+  } */
+
+  .announcement-container::-webkit-scrollbar-track {
+      background: #204932;
+  }
+
+  .announcement {
+      display: inline-block;
+      color: #FFF;
+      font-size: 16px;
+      font-weight: bold;
+      padding-left: 20px;
+      animation: scroll-left 10s linear infinite;
+  }
+ 
+
+  @keyframes scroll-left {
+      0% {
+          transform: translateX(100%);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+
+  /* Navbar */
+  .navbar {
+      height: auto;
+      padding: 10px;
+  }
+
+  .navbar-toggler {
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+  }
+
+  .navbar .dropdown-menu {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+      #header-top {
+          flex-direction: column;
+          text-align: center;
+      }
+
+      .social-icons {
+          justify-content: center;
+          margin-top: 10px;
+      }
+
+      .logo-container {
+          flex-direction: column;
+      }
+
+      .navbar {
+          flex-direction: column;
+      }
+
+      .navbar .navbar-nav {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+
+      .navbar .dropdown-menu {
+          position: static;
+          width: 100%;
+          border: none;
+          box-shadow: none;
+          border-radius: 0;
+      }
+
+      .navbar .dropdown-menu .dropdown-item {
+          text-align: left;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .text-container {
+          text-align: center;
+          margin: 5px 0;
+      }
+
+      .main-text {
+          font-size: 18px;
+      }
+
+      .sub-text {
+          font-size: 16px;
+      }
+
+      .place-text {
+          font-size: 12px;
+      }
+
+      .announcement-container {
+          font-size: 14px;
+      }
+  }
+</style>
+
+<header id="header">
+  <!-- Top Bar -->
+  <div id="header-top">
+      <div class="helpline">
+          <span>Admissions Helpline: <i class="bi bi-telephone-fill"></i> +91 7075164143 |
+              <i class="bi bi-envelope-fill"></i> admissions@idpscherukupalli.com</span>
+      </div>
+      <div class="social-icons">
+          <a href="https://www.facebook.com/people/Idps-Cherukupalli/61554664603652/" target="_blank"
+              class="social-icon" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/cherukupalliidps/" target="_blank" class="social-icon"
+              aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/CherukupalliDps/" target="_blank" class="social-icon" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://linktr.ee/idpscherukupalli" target="_blank" class="social-icon" aria-label="Linktree">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20px">
+                  <path
+                      d="M13.5108 5.85343L17.5158 1.73642L19.8404 4.11701L15.6393 8.12199H21.5488V11.4268H15.6113L19.8404 15.5345L17.5158 17.8684L11.7744 12.099L6.03299 17.8684L3.70842 15.5438L7.93745 11.4361H2V8.12199H7.90944L3.70842 4.11701L6.03299 1.73642L10.038 5.85343V0H13.5108V5.85343ZM10.038 16.16H13.5108V24.0019H10.038V16.16Z"
+                      fill="#fff"></path>
+              </svg>
+          </a>
+          <a href="https://www.youtube.com/@idpscherukupalli" target="_blank" class="social-icon"
+              aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+          </a>
+      </div>
+  </div>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-container">
+      <div class="announcement">
+         <a style="text-decoration: none; color: white;" href=""> Welcome to IDPS Cherukupalli! Admissions Open for the 2025 Academic Year! Contact Us Today!</a>
+      </div>
+  </div>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container">
+        <div class="logo-container">
+           <a href="index.html"> <img src="img/logo.jpg" alt="School Logo"></a>
+           <a href="index.html"> <div class="text-container">
+                <p class="sub-text">International</p>
+                <h3 class="main-text">DELHI PUBLIC SCHOOL</h3>
+                <p class="place-text">CHERUKUPALLI</p>
+            </div></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="about.html">About School</a></li>
+                        <li><a class="dropdown-item" href="founder.html">Message from Founder</a></li>
+                        <li><a class="dropdown-item" href="director.html">Message from Academic Director</a></li>
+                        <li><a class="dropdown-item" href="principal.html">Message from Principal</a></li>
+                        <li><a class="dropdown-item" href="mandatorydisclosure.html">Mandatory Disclosure</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Academics</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="preprimary.html">Pre Primary</a></li>
+                        <li><a class="dropdown-item" href="primary.html">Primary School</a></li>
+                        <li><a class="dropdown-item" href="middleschool.html">Middle School</a></li>
+                        <li><a class="dropdown-item" href="Beyondacademics.html">Beyond Academics</a></li>
+                        <li><a class="dropdown-item" href="assesmentpolicy.html">Assessment & Promotion Rules</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Student Life </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Education framework.html">Education Framework</a></li>
+                        <li><a class="dropdown-item" href="extra-curricular activities.html">Extra-Curricular Activities</a></li>
+                        <li><a class="dropdown-item" href="Co-Curricular Activities.html">Co-Curricular Activities</a></li>
+                        <li><a class="dropdown-item" href="facilities.html">Facilities</a></li>
+                        <li><a class="dropdown-item" href="safety and security.html">Safety And Security</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Admissions</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="online registration.html">Online Registration</a></li>
+                        <li><a class="dropdown-item" href="offline registration.html">Offline Registration</a></li>
+                       
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Enrollement</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">Enrollement Guide</a></li>
+                        <li><a class="dropdown-item" href="">Fee Structure</a></li>
+                        <li><a class="dropdown-item" href="">Age Criteria</a></li>
+                        <li><a class="dropdown-item" href="">Documents Required</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                        <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                        <li><a class="dropdown-item" href="transport.html">Transport</a></li>
+                        <li><a class="dropdown-item" href="franchise.html">Franchise Enquiry</a></li>
+                       
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+<hr style="margin: 0%;">
+
+<!-- --------------------- Founder message starts -------------------- -->
+ <style>
+     .message-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            background: #ffffff;
+            border-radius: 10px;
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+            overflow: hidden;
+            padding-left: 120px;
+            padding-top: 30px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .message-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .message-content h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #222;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .message-content h2::before {
+            content: '"';
+            font-size: 60px;
+            color: #ccc;
+            position: absolute;
+            left: -40px;
+            top: -10px;
+        }
+
+        .message-content blockquote {
+            font-size: 20px;
+            font-style: italic;
+            color: #2e7d32;
+            margin: 10px 0;
+        }
+
+        .message-content p {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .message-content .author {
+            font-weight: bolder;
+            color: #2e7d32;
+            margin-top: 10px;
+            font-size: 25px;
+
+            
+        }
+
+        .message-content .read-more {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #222;
+            text-decoration: none;
+            font-weight: bold;
+            /* border: 2px solid #ffd700; */
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            align-self: flex-start;
+            background-color: #0E753B;
+            color: #FFF;
+        }
+
+        .message-content .read-more:hover {
+            background: #ffd700;
+            color: #fff;
+        }
+
+        .message-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .message-image img {
+            width: 500px;
+            max-width: 100%;
+            height: 500px;
+            display:flex;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .message-section {
+                grid-template-columns: 1fr;
+            }
+
+            .message-content {
+                text-align: center;
+            }
+
+            .message-content h2::before {
+                left: 0;
+                top: -20px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+ </style>
+<div class="message-section">
+    <div class="message-content">
+        <h2>Director's Message</h2>
+        <blockquote>
+            "The goal of education is the advancement of knowledge and the dissemination of truth." — John F. Kennedy
+        </blockquote>
+        <p>
+"Greetings to all the aspiring students and families embarking on the educational journey at International Delhi Public School - Cherukupalli. As the Academic Director, I am privileged to guide and nurture the academic pursuits of our distinguished institution. At IDPS, we are committed to fostering a nurturing environment that cultivates intellectual curiosity, critical thinking, and a passion for lifelong learning.        </p>
+        <p>
+Our academic philosophy is grounded in the belief that each student possesses unique talents and potential. We are dedicated to providing a comprehensive educational experience that not only meets global standards but also caters to the individual needs of our students. Our curriculum is designed to challenge and inspire, ensuring that our students are well-prepared for the complexities of the modern world.        </p>
+        <p>
+            We are proud to have a team of highly qualified and passionate educators who are dedicated to delivering an exceptional learning experience. They are the backbone of our institution, constantly innovating and adapting to ensure that our students receive the best possible education.        </p>
+        <p>
+            In conclusion, I invite you to join us in this enriching educational journey at IDPS, where we strive to empower each student to achieve academic excellence and become responsible, global citizens. Together, we will unlock the limitless potential of our students, guiding them towards a bright and successful future."
+        </p>
+            <div class="author">Mani Varma</div>
+        <!-- <a href="#" class="read-more">Read More</a> -->
+    </div>
+    <div class="message-image">
+        <img src="img\idps-principal.JPG" alt="Principal Image">
+    </div>
+</div>
+   
+</body>
+</html>
