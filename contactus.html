@@ -504,7 +504,7 @@
 
 <div class="main-container">
   <div class="page-header">
-      <h1>Contact US  </h1>
+      <h1>Contact Us  </h1>
       <!-- <p>At IDPS, we believe that education extends beyond the academic curriculum. Co-curricular activities play an essential role in developing well-rounded, confident individuals. Our extensive range of activities is designed to nurture diverse talents, promote teamwork, and encourage students to explore their interests and passions.</p> -->
     </div>
 
@@ -513,51 +513,53 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
-   .container {
+          .contact-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: flex-start;
             padding: 20px;
+            /* gap: 20px; */
         }
 
-        .contact-form {
+        .enquiry-form {
             flex: 1 1 300px;
             background: #fff;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            animation: fadeIn 1s ease-in-out;
+            animation: formFadeIn 1s ease-in-out;
         }
 
-        .contact-form h2 {
+        .enquiry-form h2 {
             margin-bottom: 15px;
             font-size: 24px;
-            color: #fff;
+            color: #0E753B;
             text-align: center;
         }
 
-        .contact-form label {
+        .enquiry-form label {
             font-weight: bold;
             margin-bottom: 5px;
             display: block;
         }
 
-        .contact-form input,
-        .contact-form textarea {
+        .enquiry-form input,
+        .enquiry-form textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            font-size: 14px;
         }
 
-        .contact-form textarea {
+        .enquiry-form textarea {
             resize: none;
             height: 100px;
         }
 
-        .contact-form button {
+        .enquiry-form button {
             background-color: #0E753B;
             color: #fff;
             border: none;
@@ -566,54 +568,56 @@
             cursor: pointer;
             width: 100%;
             transition: background-color 0.3s;
+            font-size: 16px;
         }
 
-        .contact-form button:hover {
-            background-color: #0E753B;
+        .enquiry-form button:hover {
+            background-color: #066828;
         }
 
-        .info-section {
+        .info-box {
             flex: 1 1 300px;
             background: #0E753B;
             color: #fff;
             padding: 20px;
-            margin-left: 10px;
             border-radius: 8px;
-            animation: slideIn 1s ease-in-out;
+            animation: infoSlideIn 1s ease-in-out;
         }
 
-        .info-section h3 {
+        .info-box h3 {
             color: #fff;
             margin-bottom: 5px;
             font-size: 18px;
         }
 
-        .info-section p {
-            margin-bottom: 5px;
-            line-height: 1.5;
+        .info-box p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            font-size: 14px;
         }
 
-        .info-section .icon {
+        .info-icon {
             display: flex;
             align-items: center;
             margin-bottom: 15px;
         }
 
-        .info-section .icon img {
+        .info-icon img {
             width: 20px;
             height: 20px;
             margin-right: 10px;
             filter: invert(1);
         }
 
-        iframe {
+        .location-map {
             width: 100%;
             height: 300px;
             border: 0;
             border-radius: 8px;
+            margin-top: 20px;
         }
 
-        @keyframes fadeIn {
+        @keyframes formFadeIn {
             from {
                 opacity: 0;
                 transform: translateY(-20px);
@@ -624,7 +628,7 @@
             }
         }
 
-        @keyframes slideIn {
+        @keyframes infoSlideIn {
             from {
                 opacity: 0;
                 transform: translateX(20px);
@@ -636,53 +640,69 @@
         }
 
         @media (max-width: 768px) {
-            .container {
+            .contact-container {
                 flex-direction: column;
+                align-items: stretch;
             }
 
-            .info-section {
-                margin-left: 0;
+            .info-box {
                 margin-top: 20px;
+            }
+
+            .location-map {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .enquiry-form h2,
+            .info-box h3 {
+                font-size: 20px;
+            }
+
+            .enquiry-form button {
+                font-size: 14px;
+            }
+
+            .location-map {
+                height: 200px;
             }
         }
     </style>
-</head>
-<body>
-    <div class="container">
-        <div class="contact-form">
-            <h2 style="color: #0E753B;">For Enquiry</h2>
+
+    <div class="contact-container">
+        <div class="enquiry-form">
+            <h2>For Enquiry</h2>
             <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your Name" required>
+                <label for="user-name">Name</label>
+                <input type="text" id="user-name" placeholder="Enter your Name" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter a valid email address" required>
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" placeholder="Enter a valid email address" required>
 
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Enter your message here..." required></textarea>
-
-               
+                <label for="user-message">Message</label>
+                <textarea id="user-message" placeholder="Enter your message here..." required></textarea>
 
                 <button type="submit">Submit</button>
             </form>
         </div>
 
-        <div class="info-section">
-            <div class="icon">
+        <div class="info-box">
+            <div class="info-icon">
                 <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="Location">
                 <div>
                     <h3>Location:</h3>
-                    <p>CHERUKUPALLI</p>
+                    <p>Cherukupalli</p>
                 </div>
             </div>
-            <div class="icon">
+            <div class="info-icon">
                 <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email">
                 <div>
                     <h3>Email:</h3>
                     <p>idpscherukupalli@gmail.com</p>
                 </div>
             </div>
-            <div class="icon">
+            <div class="info-icon">
                 <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Call">
                 <div>
                     <h3>Call:</h3>
@@ -694,11 +714,11 @@
     </div>
 
     <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.5776954602045!2d80.6896275!3d16.0501083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a1bffb352ad75%3A0x9f479b0c92562cab!2sINTERNATIONAL%20DELHI%20PUBLIC%20SCHOOL%2C%20CHERUKUPALLI!5e0!3m2!1sen!2sin!4v1694971234567!5m2!1sen!2sin"
-    allowfullscreen=""
-    loading="lazy">
-</iframe>
-
+        class="location-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.5776954602045!2d80.6896275!3d16.0501083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a1bffb352ad75%3A0x9f479b0c92562cab!2sINTERNATIONAL%20DELHI%20PUBLIC%20SCHOOL%2C%20CHERUKUPALLI!5e0!3m2!1sen!2sin!4v1694971234567!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
 
     <script>
         document.querySelector('form').addEventListener('submit', function(e) {
@@ -707,6 +727,7 @@
             this.reset();
         });
     </script>
+
 
 </body>
 </html>
