@@ -378,10 +378,10 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Enrollement</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="">Enrollement Guide</a></li>
-                            <li><a class="dropdown-item" href="">Fee Structure</a></li>
-                            <li><a class="dropdown-item" href="">Age Criteria</a></li>
-                            <li><a class="dropdown-item" href="">Documents Required</a></li>
+                            <li><a class="dropdown-item" href="enrollement.html">Enrollement Guide</a></li>
+                            <li><a class="dropdown-item" href="feestructure.html">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="agecriteria.html">Age Criteria</a></li>
+                            <li><a class="dropdown-item" href="document.html">Documents Required</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link " href="contactus.html">Contact Us</a></li>
@@ -511,5 +511,173 @@
     <!-- <h4 style="color: #0E753B;">A Diverse Range of Activities</h4> -->
 </div>
 
+<style>
+    .form-container {
+      display: flex;
+      flex-wrap: wrap;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-width: 1100px;
+      width: 90%;
+    }
+
+    .form-content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-header h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .form-header p {
+      font-size: 16px;
+      color: #777;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #333;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #5b9af5;
+    }
+
+    .form-group textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .submit-btn {
+      background: linear-gradient(to right, #5b9af5, #4a90e2);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .submit-btn:hover {
+      background: linear-gradient(to right, #4a90e2, #3578e5);
+    }
+
+    .form-image {
+      flex: 1;
+      background: url('https://via.placeholder.com/550x600') center/cover no-repeat;
+    }
+
+    @media (max-width: 768px) {
+      .form-container {
+        flex-direction: column;
+      }
+
+      .form-image {
+        height: 200px;
+      }
+    }
+  </style>
+
+  <div class="form-container">
+    <!-- Image Section -->
+    <div class="form-image"></div>
+
+    <!-- Form Section -->
+    <div class="form-content">
+      <div class="form-header">
+        <h1>Join Our Educational Mission</h1>
+        <p>Partner with IDPS to shape the future of education.</p>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="E.g., John Doe">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="E.g., johndoe@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="E.g., +91 9876543210">
+        </div>
+
+        <div class="form-group">
+          <label for="city">City and State</label>
+          <input type="text" id="city" placeholder="E.g., Kolkata, West Bengal">
+        </div>
+
+        <div class="form-group">
+          <label for="location">Preferred Location for Franchise</label>
+          <input type="text" id="location" placeholder="E.g., Siliguri">
+        </div>
+
+        <div class="form-group">
+          <label for="occupation">Current Occupation/Business</label>
+          <input type="text" id="occupation" placeholder="E.g., Business Owner, Retail Sector">
+        </div>
+
+        <div class="form-group">
+          <label for="investment">Investment Capacity</label>
+          <select id="investment">
+            <option>Select your approximate budget range</option>
+            <option value="1">Up to ₹10 Lakhs</option>
+            <option value="2">₹10-25 Lakhs</option>
+            <option value="3">₹25-50 Lakhs</option>
+            <option value="4">Above ₹50 Lakhs</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="motivation">Why Are You Interested in IDPS?</label>
+          <textarea id="motivation" placeholder="Tell us briefly about your motivation to partner with us"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="comments">Additional Comments/Questions</label>
+          <textarea id="comments" placeholder="Anything else you'd like us to know?"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Your Interest</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

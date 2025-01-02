@@ -472,10 +472,10 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Enrollement</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="">Enrollement Guide</a></li>
-                            <li><a class="dropdown-item" href="">Fee Structure</a></li>
-                            <li><a class="dropdown-item" href="">Age Criteria</a></li>
-                            <li><a class="dropdown-item" href="">Documents Required</a></li>
+                            <li><a class="dropdown-item" href="enrollement.html">Enrollement Guide</a></li>
+                            <li><a class="dropdown-item" href="feestructure.html">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="agecriteria.html">Age Criteria</a></li>
+                            <li><a class="dropdown-item" href="document.html">Documents Required</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
@@ -495,10 +495,45 @@
     </nav>
 </header>
 
+<!-- Carousel Duplicate  -->
+<hr style="margin: 0;">
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/DJI_0345.JPG" alt="Los Angeles" class="d-block" style="width:100%; height: 600px;">
+      </div>
+      <div class="carousel-item">
+        <img src="img\DJI_0363.JPG" alt="Chicago" class="d-block" style="width:100%; height: 600px;">
+      </div>
+      <div class="carousel-item">
+        <img src="img\DJI_0499.JPG" alt="New York" class="d-block" style="width:100%; height: 600px;">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
 <!------------------------------ Carousel Start ------------------------------------->
-    <div class="container-fluid p-0 ">
+    <!-- <div class="container-fluid p-0 ">
         <div class="owl-carousel header-carousel position-relative">
-            <!-- Carousel Item 1 -->
+          
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/DJI_0345.JPG" alt="Carousel Image 1">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
@@ -518,7 +553,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Carousel Item 2 -->
+            
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/DJI_0365.JPG" alt="Carousel Image 2">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
@@ -540,7 +575,7 @@
             </div>
         </div>
     </div>
-    
+     -->
     <!------------------------------- Carousel End -=------------------------------>
 
 
@@ -1290,8 +1325,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         .latest-happenings h2 {
-            font-size: 2.2rem;
+            font-size: 1.2rem;
             margin-bottom: 30px;
+            color:#0E753B;
         }
 
         .happenings-container {
@@ -1434,7 +1470,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </style>
 
 <div class="latest-happenings">
-    <h2>Latest Happenings</h2>
+    <h3>Latest Happenings</h3>
     <div class="happenings-container">
         <!-- Main Event -->
         <div class="main-event">
@@ -1450,7 +1486,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="side-events">
             <div class="side-event">
                 <span class="event-number">02</span>
-                <img src="img\garba fu.jpg" class="img-fluid" alt="Garba Fun">
+                <img src="img\garbafun.jpg" class="img-fluid" alt="Garba Fun">
                 <div class="event-content">
                     <h3>Twirl & Swirl: Garba Fun</h3>
                     <p>17 November 2024</p>
@@ -1637,14 +1673,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <!-- ----------- Infrastructure ------------ -->
   <style>
-    /* Add Custom Spacing for Category Cards */
+   
 .category-card {
   position: relative;
   border-radius: 50%;
   overflow: hidden;
-  width: 150px; /* Default Size */
+  width: 150px; 
   height: 150px;
-  margin: 10px; /* Adjust spacing between photos */
+  margin: 10px;
   transition: transform 0.3s ease-in-out;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
