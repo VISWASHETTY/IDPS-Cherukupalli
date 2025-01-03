@@ -418,88 +418,7 @@
       .page-header h1 {
           font-size: 20px;
           color: #0E753B;
-      }
-
-      .promo-banner {
-          background-color: #2c5e2c;
-          color: white;
-          padding: 20px;
-          border-radius: 10px;
-          display: inline-block;
-      }
-
-      .promo-banner h2 {
-          font-size: 36px;
-          font-weight: bold;
-          margin: 0;
-      }
-
-      .promo-banner p {
-          font-size: 14px;
-      }
-
-      .intro-text {
-          margin-top: 20px;
-          color: #555;
-          font-size: 16px;
-         
-         
-      }
-
-      .features-section {
-          margin-top: 40px;
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
-      }
-
-      .feature-card {
-          text-align: center;
-          margin: 10px;
-          padding: 15px;
-          border-radius: 8px;
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-          background-color: #ffffff;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          cursor: pointer;
-          width: 200px;
-      }
-
-      .feature-card:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-      }
-
-      .feature-card img {
-          width: 150px;
-          height: 150px;
-          margin-bottom: 10px;
-      }
-
-      .feature-card p {
-          font-size: 14px;
-          color: #333;
-      }
-
-      /* Responsive */
-      @media (max-width: 768px) {
-          .promo-banner h2 {
-              font-size: 28px;
-          }
-
-          .feature-card {
-              width: 100px;
-          }
-
-          .feature-card img {
-              width: 40px;
-              height: 40px;
-          }
-
-          .feature-card p {
-              font-size: 12px;
-          }
-      }
+      }  
 </style>
 
 <div class="main-container">
@@ -511,112 +430,341 @@
     <!-- <h4 style="color: #0E753B;">A Diverse Range of Activities</h4> -->
 </div>
 
+<style>
+  .table-container {
+      margin: 40px auto;
+      max-width: 90%;
+      overflow-x: auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th {
+      background: linear-gradient(90deg, #4CAF50, #45a049);
+      color: white;
+      font-weight: bold;
+      padding: 15px;
+      text-align: left;
+    }
+
+    td {
+      padding: 15px;
+      font-size: 14px;
+      color: #555;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+      background-color: #f9f9f9;
+      transition: background-color 0.3s ease;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #fff;
+    }
+
+    .table-container h1 {
+      text-align: center;
+      font-size: 24px;
+      color: #333;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      th, td {
+        padding: 10px;
+        font-size: 13px;
+      }
+
+      .table-container h1 {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      th, td {
+        font-size: 12px;
+        padding: 8px;
+      }
+
+      .table-container h1 {
+        font-size: 18px;
+      }
+    }
+  </style>
+
+
+<div class="table-container">
+  <h1>Bus Routes Information</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Route No</th>
+        <th>Bus No</th>
+        <th>Driver (Mobile)</th>
+        <th>Helper (Mobile)</th>
+        <th>Stages</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>AP39TT3162</td>
+        <td>Anand (9121908567)</td>
+        <td>Srilatha (8008111720)</td>
+        <td>Peravali Palem, Chavali, Bhattiprolu, Kanagala, Gudavalli, Nadimpalli, Ponnapalli</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>AP39TT3163</td>
+        <td>Sk. Jani (8790335252)</td>
+        <td>P. Sujatha (9750301269)</td>
+        <td>Nizampatnam, Komorulu, Matlapudi, Siripudi, Mettagowda Palem, Balusula Palem, Uchavaripalem, Arepalli</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>AP39TT3164</td>
+        <td>K. Nancharaiah (9959608697)</td>
+        <td>K. Nancharaiah (9959608697)</td>
+        <td>Adavula Deevi, Kotha Kuchinapudi, Garuvu Palem, Borra Vari Palem, Pullameraka, Eedupalli, Pudivada, Nagaram</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>AP39TT3165</td>
+        <td>G. Suresh (7799319989)</td>
+        <td>Venkateswaramma (9652776499)</td>
+        <td>Nagayalanka, Maripalem, Tungalavaripalem, Avanigadda, Mopidevi</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>AP39TT3166</td>
+        <td>Bikshalu (9912502927)</td>
+        <td>R. Sundara Rao (9912502927)</td>
+        <td>Alaparru, Konaganivari Palem, Dhulipudi, Addanki Vari Palem, Thota Palli, Rajole, Badevaripalem</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>AP39UF7757</td>
+        <td>Sk. Baji (7075518746)</td>
+        <td>School Hostel Bus</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>AP39UD0926</td>
+        <td>Raja (9652664088)</td>
+        <td>Mary (9390039315)</td>
+        <td>Tenali Burripalem Road, Tenali, Kuchipudi, Pedapudi, Amarthaluru, Govada</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>AP39UF3916</td>
+        <td>Raju (9866915659)</td>
+        <td>Sirisha (7981582663)</td>
+        <td>Repalle, Karumuru, Alamudi, Pallekona, Rachuru, Tatavaripalem</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>AP39UF3917</td>
+        <td>S. Nancharaiah (8074221090)</td>
+        <td>Manikyam (8074221090)</td>
+        <td>Aravapalli, Uppudi, Repalle, Isukapalli, Bethapudi, Gudikayalanka, Sajjavaripalem, Nagaram</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>AP39UF1205</td>
+        <td>M. Subba Reddy (9666222940)</td>
+        <td>Gnana Sundari (8142430578)</td>
+        <td>Pedapalli, Gattuvaripalem, Alakapuram, Khajipalem, Gokaraju Palem, PV Pale, Kavur, Yeminenivari Palem</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>AP39UF3914</td>
+        <td>Sk. Rafi (9849456035)</td>
+        <td>Mahesh (9676220325)</td>
+        <td>Chirala, Eepuru Palem, Surya Lanka (Bapatla), Karlapalem</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>AP39UF3915</td>
+        <td>M. Sudhakar (9059907555)</td>
+        <td>Ch. Prasanthi (9581468688)</td>
+        <td>Chintalapudi, Ponnuru, Nidubrolu, Kondamudi, Inturu</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>AP39UF0939</td>
+        <td>K. Suresh (9959486954)</td>
+        <td>K. Suresh (9959486954)</td>
+        <td>Jampani, Vemuru, Musalapadu, Kolluru, Alapati Nagaram, Donepudi, Vellaturu, Bhattiprolu, Kanagala, Nadimpalli, Ponnapalli</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>AP39UF0941</td>
+        <td>P. Swami Babu (7386875863)</td>
+        <td>Naga Lakshmi (8885281482)</td>
+        <td>Kaminenivaripalem, Cherukupalli, Gullapalli</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>AP39UF2282</td>
+        <td>Aashiq (8247616575)</td>
+        <td>Aashiq (8247616575)</td>
+        <td>Nallamatta Vari Palem, Karlapalem, Buddam, Yazali, Dundi Vari Palem, Thimmareddy Palem, Reddy Palem, Chandole NSL, Kavur, Jonnagaddavari Palem</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>AP39UF4612</td>
+        <td>Bhanu (9014347117)</td>
+        <td>Neelima (9014347117)</td>
+        <td>Jammulapalem, Bapatla, Nandirajuthota, Hiderpeta, Karlapalem</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
+
+
+<!-------------------- Footer starts -------------------->
 
 <style>
-    .table-container {
-        overflow-x: auto;
-        
-      }
-    
-      table {
-        width: 80%;
-        border-collapse: collapse;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        animation: fadeIn 1s ease-in-out;
-      }
-    
-      th, td {
-        padding: 15px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-      }
-    
-      th {
-        background-color: #4CAF50;
-        color: white;
-        position: sticky;
-        top: 0;
-        z-index: 1;
-      }
-    
-      tr:hover {
-        background-color: #f1f1f1;
-        transition: background-color 0.3s ease;
-      }
-    
-      tr:nth-child(even) {
-        background-color: #f9f9f9;
-      }
-    
-      td {
-        white-space: nowrap;
-      }
-    
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    
-      @media (max-width: 768px) {
-        th, td {
-          font-size: 14px;
-          padding: 10px;
-        }
-      }
-    
-      @media (max-width: 480px) {
-        table {
-          font-size: 12px;
-        }
-    
-        th, td {
-          padding: 8px;
-        }
-      }
-    </style>
-    
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Route No</th>
-            <th>Bus No</th>
-            <th>Driver (Mobile)</th>
-            <th>Helper (Mobile)</th>
-            <th>Stages</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>AP39TT3162</td>
-            <td>Anand (9121908567)</td>
-            <td>Srilatha (8008111720)</td>
-            <td>Peravali Palem, Chavali, Bhattiprolu, Kanagala, Gudavalli, Nadimpalli, Ponnapalli</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>AP39TT3163</td>
-            <td>Sk. Jani (8790335252)</td>
-            <td>P. Sujatha (9750301269)</td>
-            <td>Nizampatnam, Komorulu, Matlapudi, Siripudi, Mettagowda Palem, Balusula Palem, Uchavaripalem, Arepalli</td>
-          </tr>
-          <!-- Add additional rows as necessary -->
-        </tbody>
-      </table>
-    </div>
-    
+    footer.footer {
+        background: #fbfcfb;
+        color: #fff;
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
 
+    .footer h5 {
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: #0E753B;
+        text-align: center;
+    }
+
+    .footer address, 
+    .footer ul {
+        text-align: center;
+        color: black;
+    }
+
+    .footer address {
+        font-style: normal;
+        line-height: 1.5;
+    }
+
+    .footer strong {
+        color: #0E753B;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+        border-top: 1px solid #444;
+        padding-top: 10px;
+        text-align: center;
+        color: #444;
+        font-size: 14px;
+    }
+
+    .footer ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .footer ul li {
+        margin: 0;
+    }
+
+    /* Align elements centrally for mobile */
+    @media (max-width: 768px) {
+        .footer .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer h5 {
+            font-size: 1.1rem;
+        }
+
+        .footer img {
+            margin-bottom: 20px;
+        }
+
+        .footer address, 
+        .footer ul {
+            text-align: center;
+        }
+    }
+</style>
+
+<footer class="footer" style="background-color: #FFF;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <img src="https://idpscherukupalli.com/assets/img/idpsfooter.png" alt="" style="width:150px;">
+            </div>
+            <div class="col-md-3">
+                <h5>Our Helpline</h5>
+                <address>
+                    <strong>PARENTS HELP LINE DESK</strong><br>
+                    Mobile No: +91-9848000371<br>
+                    <br>
+                    <strong>RECEPTION HELPLINE</strong><br>
+                    Mobile/WhatsApp: 7799 7979 31, 7799 7979 32<br>
+                    Landline No: 08648293020<br>
+                </address>
+            </div>
+
+            <div class="col-md-3">
+                <h5>For Admission</h5>
+                <ul class="list-unstyled">
+                    <li><strong>ADMISSION</strong></li>
+                    <li>Mobile/WhatsApp: +91-7075164143</li>
+                    <li>admissions@idpscherukupalli.com</li>
+                    <br>
+                    <strong>EMAIL YOUR QUERIES</strong><br>
+                    info@idpscherukupalli.com
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Our Address</h5>
+                <address>
+                    DR NO 9-168 CHERUKUPALLI (V) CHERUKUPALLI (M)<br>
+                    GUNTUR DISTRICT NEAR JAIHIND TAIKIES<br>
+                    GUNTUR, ANDHRA PRADESH-INDIA<br>
+                    PIN: 522309<br>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 IDPS Cherukupalli. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<!-- ----------Footer Ends ------------- -->
 </body>
 </html>

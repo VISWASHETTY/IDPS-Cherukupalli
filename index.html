@@ -85,54 +85,71 @@
                             <div class="separator m-auto" style="background: #fff 0% 0% no-repeat padding-box;"></div>
                         </div>
                     </div>
-                    <form>
+                    <form id="admissionForm">
                         <div class="row">
-                            <div class="col-sm-6">
-                                <label for="parentname" class="form-label">Parent Name <span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" id="parentname" placeholder="Enter Parent Name" required>
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="childname" class="form-label">Child Name  <span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" id="childname" placeholder="Enter Child Name" required>
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="mobile" class="form-label">Mobile  <span style="color: red;">*</span></label>
-                                <input type="tel" class="form-control" id="mobile" placeholder="Enter Mobile Number" required>
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="email" class="form-label">Email Address   <span style="color: red;">*</span></label>
-                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                            </div>
-                            <div class="col-sm-12">
-                                <label for="location" class="form-label">Location  <span style="color: red;">*</span></label>
-                                <textarea class="form-control" id="location" rows="3"></textarea>
-                            </div>
-                            <div class="col-sm-12">
-                                <label for="grade" class="form-label">Grade  <span style="color: red;">*</span></label>
-                                <select class="form-select" id="grade">
-                                    <option selected>Select Grade</option>
-                                    <option value="Nursery">EY-1 (Nursery)</option>
-                                    <option value="PP1/LKG">EY-2 (PP1/LKG)</option>
-                                    <option value="PP2/UKG">EY-3 (PP2/UKG)</option>
-                                    <option value="Grade 1">Grade 1</option>
-                                    <option value="Grade 2">Grade 2</option>
-                                    <option value="Grade 3">Grade 3</option>
-                                    <option value="Grade 4">Grade 4</option>
-                                    <option value="Grade 5">Grade 5</option>
-                                    <option value="Grade 6">Grade 6</option>
-                                    <option value="Grade 7">Grade 7</option>
-                                    <option value="Grade 8">Grade 8</option>
-                                    <option value="Grade 9">Grade 9</option>
-                                    <option value="Grade 10">Grade 10</option>
-                                    <option value="Grade 11">Grade 11</option>
-                                    <option value="Grade 12">Grade 12</option>
-                                </select>
-                            </div>
+                          <!-- Parent Name -->
+                          <div class="col-sm-6">
+                            <label for="parentname" class="form-label">Parent Name <span style="color: red;">*</span></label>
+                            <input type="text" class="form-control" id="parentname" placeholder="Enter Parent Name" required>
+                            <div class="error-message" id="parentnameError"></div>
+                          </div>
+                    
+                          <!-- Child Name -->
+                          <div class="col-sm-6">
+                            <label for="childname" class="form-label">Child Name <span style="color: red;">*</span></label>
+                            <input type="text" class="form-control" id="childname" placeholder="Enter Child Name" required>
+                            <div class="error-message" id="childnameError"></div>
+                          </div>
+                    
+                          <!-- Mobile -->
+                          <div class="col-sm-6">
+                            <label for="mobile" class="form-label">Mobile <span style="color: red;">*</span></label>
+                            <input type="tel" class="form-control" id="mobile" placeholder="Enter Mobile Number" required>
+                            <div class="error-message" id="mobileError"></div>
+                          </div>
+                    
+                          <!-- Email -->
+                          <div class="col-sm-6">
+                            <label for="email" class="form-label">Email Address <span style="color: red;">*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            <div class="error-message" id="emailError"></div>
+                          </div>
+                    
+                          <!-- Location -->
+                          <div class="col-sm-12">
+                            <label for="location" class="form-label">Location <span style="color: red;">*</span></label>
+                            <textarea class="form-control" id="location" rows="3" required></textarea>
+                            <div class="error-message" id="locationError"></div>
+                          </div>
+                    
+                          <!-- Grade -->
+                          <div class="col-sm-12">
+                            <label for="grade" class="form-label">Grade <span style="color: red;">*</span></label>
+                            <select class="form-select" id="grade" required>
+                              <option value="" selected>Select Grade</option>
+                              <option value="Nursery">EY-1 (Nursery)</option>
+                              <option value="PP1/LKG">EY-2 (PP1/LKG)</option>
+                              <option value="PP2/UKG">EY-3 (PP2/UKG)</option>
+                              <option value="Grade 1">Grade 1</option>
+                              <option value="Grade 2">Grade 2</option>
+                              <option value="Grade 3">Grade 3</option>
+                              <option value="Grade 4">Grade 4</option>
+                              <option value="Grade 5">Grade 5</option>
+                              <option value="Grade 6">Grade 6</option>
+                              <option value="Grade 7">Grade 7</option>
+                              <option value="Grade 8">Grade 8</option>
+                              <option value="Grade 9">Grade 9</option>
+                              <option value="Grade 10">Grade 10</option>
+                              <option value="Grade 11">Grade 11</option>
+                              <option value="Grade 12">Grade 12</option>
+                            </select>
+                            <div class="error-message" id="gradeError"></div>
+                          </div>
                         </div>
                         <div class="text-center mt-3" style="padding-bottom: 20px;">
-                           <button type="submit" class="btn  btn-primary">Submit</button>
+                          <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
-                    </form>
+                      </form>
                 </div>
             </div>
         </div>
@@ -145,6 +162,84 @@
             modal.show();
         };
     </script>
+
+<script>
+    const form = document.getElementById('admissionForm');
+  
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+  
+      let isValid = true;
+  
+      // Parent Name Validation
+      const parentname = document.getElementById('parentname');
+      const parentnameError = document.getElementById('parentnameError');
+      if (!parentname.value.trim()) {
+        parentnameError.textContent = "Parent name is required.";
+        isValid = false;
+      } else {
+        parentnameError.textContent = "";
+      }
+  
+      // Child Name Validation
+      const childname = document.getElementById('childname');
+      const childnameError = document.getElementById('childnameError');
+      if (!childname.value.trim()) {
+        childnameError.textContent = "Child name is required.";
+        isValid = false;
+      } else {
+        childnameError.textContent = "";
+      }
+  
+      // Mobile Validation
+      const mobile = document.getElementById('mobile');
+      const mobileError = document.getElementById('mobileError');
+      const mobileRegex = /^\+?\d{10,13}$/;
+      if (!mobile.value.trim() || !mobileRegex.test(mobile.value)) {
+        mobileError.textContent = "Please enter a valid mobile number.";
+        isValid = false;
+      } else {
+        mobileError.textContent = "";
+      }
+  
+      // Email Validation
+      const email = document.getElementById('email');
+      const emailError = document.getElementById('emailError');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email.value.trim() || !emailRegex.test(email.value)) {
+        emailError.textContent = "Please enter a valid email address.";
+        isValid = false;
+      } else {
+        emailError.textContent = "";
+      }
+  
+      // Location Validation
+      const location = document.getElementById('location');
+      const locationError = document.getElementById('locationError');
+      if (!location.value.trim()) {
+        locationError.textContent = "Location is required.";
+        isValid = false;
+      } else {
+        locationError.textContent = "";
+      }
+  
+      // Grade Validation
+      const grade = document.getElementById('grade');
+      const gradeError = document.getElementById('gradeError');
+      if (!grade.value) {
+        gradeError.textContent = "Please select a grade.";
+        isValid = false;
+      } else {
+        gradeError.textContent = "";
+      }
+  
+      // If valid, submit the form
+      if (isValid) {
+        alert("Form submitted successfully!");
+        form.reset();
+      }
+    });
+  </script>
 
 <!-- Navbar top starts from here -->
 <style>
@@ -2228,7 +2323,7 @@ p {
 <footer class="footer" style="background-color: #FFF;">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 text-center">
+            <div class="col-md-2 text-center">
                 <img src="https://idpscherukupalli.com/assets/img/idpsfooter.png" alt="" style="width:150px;">
             </div>
             <div class="col-md-3">
